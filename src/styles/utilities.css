@@ -1,0 +1,44 @@
+/* ============================================
+   UTILITIES
+   Single-purpose classes + theme exceptions.
+   The "U" and "E" in CUBE CSS.
+   ============================================ */
+
+.text-center {
+  text-align: center;
+}
+
+/* ---- Theme system via data attributes (Exception layer) ----
+   Sections declare a theme; child components inherit custom
+   properties for color without needing context-specific rules.
+   ------------------------------------------------------------ */
+
+[data-theme="hero"] {
+  background-color: var(--color-hero-bg);
+  background-image: radial-gradient(
+    ellipse 90% 65% at 50% 108%,
+    var(--color-hero-arc) 0%,
+    transparent 65%
+  );
+  color: var(--color-white);
+}
+
+[data-theme="purple"] {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+}
+
+[data-theme="navy"] {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+}
+
+[data-theme="dark"] {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+[data-theme="light"] {
+  background-color: var(--color-peach);
+  color: var(--color-peach-text);
+}

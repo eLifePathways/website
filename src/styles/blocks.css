@@ -1,0 +1,133 @@
+/* ============================================
+   BLOCKS
+   Component-specific styles — the "B" in CUBE.
+   Blocks rely on global styles + compositions;
+   only what's unique to the component lives here.
+   ============================================ */
+
+/* ---- site-header ---- */
+.site-header {
+  background-color: var(--color-hero-bg);
+  padding-block: var(--space-sm);
+}
+
+/* ---- site-nav ---- */
+.site-nav {
+  justify-content: space-between;
+}
+
+.site-nav__logo {
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: var(--font-weight-regular);
+}
+
+.site-nav__logo strong {
+  font-weight: var(--font-weight-bold);
+}
+
+.site-nav__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav__links a {
+  color: var(--color-white);
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.site-nav__links a:hover {
+  opacity: 1;
+}
+
+/* ---- button ---- */
+.button {
+  display: inline-block;
+  padding: 0.55em 1.4em;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  background-color: var(--color-coral);
+  color: var(--color-white);
+  transition: opacity 200ms ease;
+  white-space: nowrap;
+}
+
+.button:hover {
+  opacity: 0.85;
+}
+
+/* Exception: pink variant for CTA section */
+.button[data-variant="pink"] {
+  background-color: var(--color-pink);
+}
+
+/* ---- hero ---- */
+.hero {
+  padding-block: var(--space-3xl) var(--space-2xl);
+}
+
+.hero h1 em {
+  color: var(--color-coral);
+  font-style: italic;
+}
+
+/* ---- content-section ---- */
+.content-section {
+  padding-block: var(--space-2xl);
+}
+
+.content-section h2 em {
+  color: var(--color-coral);
+}
+
+/* ---- news-section ---- */
+.news-section {
+  padding-block: var(--space-2xl);
+}
+
+.news-section .section-label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+  margin-block-end: var(--space-md);
+}
+
+/* ---- card ---- */
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0.5rem;
+  padding: var(--space-md);
+  --flow-space: var(--space-xs);
+}
+
+.card h3 {
+  color: var(--color-white);
+}
+
+.card p {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* ---- cta-section ---- */
+.cta-section {
+  padding-block: var(--space-2xl);
+}
+
+.cta-section h2 em {
+  color: var(--color-pink);
+  font-style: italic;
+}
+
+/* ---- site-footer ---- */
+.site-footer {
+  padding-block: var(--space-lg);
+}
+
+.site-footer p {
+  font-size: var(--font-size-xs);
+  opacity: 0.55;
+}

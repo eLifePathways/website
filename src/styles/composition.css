@@ -1,0 +1,54 @@
+/* ============================================
+   COMPOSITION
+   Layout primitives — the "C" in CUBE CSS.
+   These handle structural skeleton and spacing.
+   ============================================ */
+
+/* Wrapper: constrained, centered content region */
+.wrapper {
+  max-width: var(--wrapper-max);
+  margin-inline: auto;
+  padding-inline: var(--wrapper-padding);
+}
+
+/* Flow: vertical rhythm between direct children */
+.flow > * + * {
+  margin-block-start: var(--flow-space, var(--space-md));
+}
+
+/* Cluster: horizontal grouping that wraps naturally */
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--cluster-gap, var(--space-sm));
+  align-items: center;
+}
+
+/* Columns: asymmetric two-column layout */
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--columns-gap, var(--space-xl));
+  align-items: flex-start;
+}
+
+.columns > :first-child {
+  flex-basis: var(--columns-width, 260px);
+  flex-grow: 1;
+}
+
+.columns > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 50%;
+}
+
+/* Grid: responsive auto-fill grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(min(var(--grid-min-size, 200px), 100%), 1fr)
+  );
+  gap: var(--grid-gap, var(--space-md));
+}
