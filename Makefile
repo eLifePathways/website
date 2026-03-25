@@ -1,10 +1,13 @@
-.PHONY: dev build docker
+.PHONY: dev build docker docker-run
 
 build: node_modules
 	npx astro build
 
 docker:
 	docker build -t website .
+
+docker-run: docker
+	docker run --rm -p 8080:80 website
 
 dev: node_modules
 	npx astro dev
