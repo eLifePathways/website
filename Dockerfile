@@ -10,8 +10,8 @@ RUN pnpm install --frozen-lockfile
 COPY . .
 RUN npx astro build
 
-FROM nginx:alpine
+FROM caddy:2-alpine
 
-COPY --from=builder /app/dist /usr/share/nginx/html
+COPY --from=builder /app/dist /usr/share/caddy
 
 EXPOSE 80
