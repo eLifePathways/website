@@ -2,20 +2,22 @@
   /* Brand accent colors */
   --color-pink: #d6347a;
   --color-white: #ffffff;
+  --color-dark-purple: #440535;
 
   /* Background palette */
   --color-peach: #fce4c8;
+  --gradient-peach-1: linear-gradient(to bottom, #ffe6bb 0%, #f6c6a7 100%);
   --color-cream: #fef6ee;
   --color-peach-text: #1b0a3c;
 
   /* Spacing scale */
-  --space-xs: 0.5rem;
-  --space-sm: 0.75rem;
-  --space-md: 1.5rem;
-  --space-lg: 2.5rem;
-  --space-xl: 4rem;
-  --space-2xl: 6rem;
-  --space-3xl: 9rem;
+  --space-xs: 0.5rem;   /* 8px */
+  --space-sm: 0.75rem;  /* 12px */
+  --space-md: 1.5rem;   /* 24px */
+  --space-lg: 2.5rem;   /* 40px */
+  --space-xl: 4rem;     /* 64px */
+  --space-2xl: 6rem;    /* 96px */
+  --space-3xl: 9rem;    /* 144px */
 
   /* Layout */
   --wrapper-max: 880px;

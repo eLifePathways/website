@@ -6,20 +6,28 @@
    ============================================ */
 
 /* ---- site-header ---- */
-.site-header {
-  background-color: var(--color-peach);
+.site-header { 
   padding-block: var(--space-sm);
 }
 
 /* ---- site-nav ---- */
 .site-nav {
   justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
 }
 
 .site-nav__logo {
   color: var(--color-peach-text);
   text-decoration: none;
   font-weight: var(--font-weight-regular);
+}
+
+.site-nav__logo img {
+  height: 1.75rem;
+  width: auto;
+  display: block;
 }
 
 .site-nav__logo strong {
@@ -30,12 +38,15 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  gap: var(--space-md);
 }
 
 .site-nav__links a {
   color: var(--color-peach-text);
   text-decoration: none;
   opacity: 0.85;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .site-nav__links a:hover {
@@ -63,11 +74,60 @@
 /* Exception: pink variant for CTA section */
 .button[data-variant="pink"] {
   background-color: var(--color-pink);
+  color: var(--color-white);
 }
 
 /* ---- hero ---- */
 .hero {
-  padding-block: var(--space-3xl) var(--space-2xl);
+  height: 90vh;
+  max-height: 880px;
+  padding-top: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    url('/images/hero-arc.svg') center 165px / 100% auto no-repeat,
+    var(--gradient-peach-1);
+}
+
+.hero-inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.hero h1 > span {
+  display: block;
+}
+
+.hero h1 {
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02rem;
+  color: var(--color-dark-purple);
+}
+
+.hero-body {
+  color: var(--color-dark-purple);
+  font-size: var(--font-size-lg);
+  line-height: 1.55;
+}
+
+.hero-dot {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  left: 6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--color-pink);
+  vertical-align: baseline;
 }
 
 .hero h1 em {
@@ -130,4 +190,15 @@
 .site-footer p {
   font-size: var(--font-size-xs);
   opacity: 0.55;
+}
+
+/* ---- responsive ---- */
+@media (min-width: 1200px) {
+  .hero-inner {
+    padding: 0 160px;
+  }
+
+  .hero-inner h1 {
+    margin-bottom: var(--space-md);
+  }
 }
