@@ -37,6 +37,8 @@ body {
     margin: 0;
     min-height: 100vh;
     line-height: 1.5;
+    background-color: var(--color-cream);
+    color: var(--color-peach-text);
 }
 
 /* Set shorter line heights on headings and interactive elements */

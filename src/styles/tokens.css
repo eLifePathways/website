@@ -1,16 +1,11 @@
 :root {
   /* Brand accent colors */
-  --color-coral: #e88a5a;
   --color-pink: #d6347a;
   --color-white: #ffffff;
 
   /* Background palette */
-  --color-hero-bg: #2c1870;
-  --color-hero-arc: #4a30a8;
-  --color-purple: #281a62;
-  --color-navy: #1b1248;
-  --color-dark: #130d38;
   --color-peach: #fce4c8;
+  --color-cream: #fef6ee;
   --color-peach-text: #1b0a3c;
 
   /* Spacing scale */
