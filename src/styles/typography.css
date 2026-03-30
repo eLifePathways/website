@@ -9,7 +9,7 @@
   --font-size-lg:   1.5rem;    /* 24px */
   --font-size-xl:   2rem;      /* 32px */
   --font-size-2xl:  2.5rem;    /* 40px */
-  --font-size-3xl:  3.5rem;    /* 56px */
+  --font-size-3xl:  3rem;    /* 48px */
   --font-size-4xl:  5rem;      /* 80px */
 
   /* Font weights */
@@ -39,17 +39,44 @@ nav a {
 
 /* Hero heading */
 h1 {
-  font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
 }
 
 /* Section headings */
 h2 {
-  font-size: var(--font-size-2xl);
-  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-regular);
   line-height: var(--line-height-snug);
+  margin-top: 0;
 }
+
+h2 .dot {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-pink);
+  border-radius: 50%;
+  margin-left: 0.15em;
+  vertical-align: baseline;
+}
+
+@media (min-width: 30rem) {
+  h2 .dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (min-width: 40rem) {
+  h2 .dot {
+    width: 12px;
+    height: 12px;
+  }
+}
+
 
 /* News section heading and blog card titles */
 h3 {

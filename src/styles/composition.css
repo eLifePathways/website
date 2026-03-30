@@ -26,10 +26,7 @@
 
 /* Columns: asymmetric two-column layout */
 .columns {
-  display: flex;
-  flex-wrap: wrap;
   gap: var(--columns-gap, var(--space-xl));
-  align-items: flex-start;
 }
 
 .columns > :first-child {

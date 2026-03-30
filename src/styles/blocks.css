@@ -201,6 +201,10 @@
 
 /* ---- responsive ---- */
 @media (min-width: 30rem /* sm = 480px */) {
+  h2 {
+    font-size: var(--font-size-xl);
+  }
+
   .hero-dot {
     width: 14px;
     height: 14px;
@@ -220,6 +224,14 @@
 }
 
 @media (min-width: 40rem /* md = 640px */) {
+  h2 {
+    font-size: var(--font-size-2xl);
+  }
+
+  p {
+    font-size: var(--font-size-base);
+  }
+
   .hero-dot {
     width: 18px;
     height: 18px;
@@ -242,6 +254,16 @@
 }
 
 @media (min-width: 50rem /* 800px */) {
+  h2 {
+    font-size: var(--font-size-3xl);
+  }
+
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
   .hero-dot {
     width: 20px;
     height: 20px;
@@ -267,6 +289,10 @@
 }
 
 @media (min-width: 75rem /* 1200px */) {
+  p {
+    font-size: var(--font-size-md);
+  }
+
   .site-nav__logo img {
     height: 1.75rem;
   }
