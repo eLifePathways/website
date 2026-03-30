@@ -256,6 +256,11 @@
 @media (min-width: 50rem /* 800px */) {
   h2 {
     font-size: var(--font-size-3xl);
+    line-height: var(--line-height-tight);
+  }
+
+  .columns h2 {
+    margin-top: var(--space-sm);
   }
 
   .columns {
