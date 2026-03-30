@@ -58,7 +58,8 @@
 /* ---- button ---- */
 .button {
   display: inline-block;
-  padding: 0.55em 1.4em;
+  padding: 0.625rem 1.25rem;
+  line-height: 1.25rem;
   border-radius: 999px;
   text-decoration: none;
   font-size: var(--font-size-sm);
@@ -72,6 +73,11 @@
 .button:hover {
   opacity: 0.85;
 }
+
+.columns .button {
+  margin-top: 2.25rem;
+}
+
 
 /* Exception: pink variant for CTA section */
 .button[data-variant="pink"] {
@@ -269,6 +275,12 @@
     align-items: flex-start;
   }
 
+  .columns .button {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0.875rem 1.75rem;
+  }
+
   .hero-dot {
     width: 20px;
     height: 20px;
@@ -291,6 +303,8 @@
   .hero-inner h1 {
     font-size: clamp(60px, 7vw, 80px);
   }
+
+  
 }
 
 @media (min-width: 75rem /* 1200px */) {
