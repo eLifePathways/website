@@ -1,0 +1,19 @@
+---
+import SiteNav from './SiteNav.astro';
+
+interface Props {
+  label: string;
+  heading: string;
+}
+
+const { label, heading } = Astro.props;
+---
+
+<header class="landing-hero" data-theme="hero">
+  <SiteNav />
+  <div class="[ wrapper ] [ flow ] hero-inner">
+    <p class="section-label">{label}</p>
+    <h1>{heading}<em>.</em></h1>
+    <slot />
+  </div>
+</header>
