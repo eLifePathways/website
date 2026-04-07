@@ -1,6 +1,7 @@
 ---
 import '../styles/main.css';
 import Footer from '../components/Footer.astro';
+import SiteNav from '../components/SiteNav.astro';
 ---
 
 <!DOCTYPE html>
@@ -12,16 +13,7 @@ import Footer from '../components/Footer.astro';
   </head>
   <body>
     <header class="site-header">
-      <nav class="[ site-nav ] [ wrapper cluster ]">
-        <a class="site-nav__logo" href="/">eLife<strong>Pathways</strong>.</a>
-        <ul class="[ site-nav__links ] [ cluster ]" role="list">
-          <li><a href="/partnerships">Partnerships</a></li>
-          <li><a href="/solutions">Solutions</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a class="button" href="#">Get involved</a></li>
-        </ul>
-      </nav>
+      <SiteNav />
     </header>
 
     <main>
