@@ -51,6 +51,10 @@
   opacity: 1;
 }
 
+.site-nav__links .button {
+  opacity: 1;
+}
+
 /* ---- button ---- */
 .button {
   display: inline-block;
@@ -62,12 +66,12 @@
   font-weight: var(--font-weight-semibold);
   background-color: var(--color-pink);
   color: var(--color-white);
-  transition: opacity 200ms ease;
+  transition: filter 200ms ease;
   white-space: nowrap;
 }
 
 .button:hover {
-  opacity: 0.85;
+  filter: brightness(0.85);
 }
 
 .columns .button {
