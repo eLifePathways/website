@@ -5,13 +5,9 @@
    only what's unique to the component lives here.
    ============================================ */
 
-/* ---- site-header ---- */
-.site-header { 
-  padding-block: var(--space-sm);
-}
-
 /* ---- site-nav ---- */
 .site-nav {
+  padding-block: var(--space-sm);
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
