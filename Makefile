@@ -1,4 +1,4 @@
-.PHONY: dev build docker docker-run backstop-reference backstop-test
+.PHONY: dev build docker docker-run backstop-reference backstop-test backstop-approve
 
 build: node_modules
 	npx astro build
@@ -22,6 +22,9 @@ backstop-reference: node_modules
 	npx backstop reference --docker; STATUS=$$?; \
 	kill $$DEV_PID 2>/dev/null; \
 	exit $$STATUS
+
+backstop-approve: node_modules
+	npx backstop approve
 
 backstop-test: node_modules
 	lsof -ti:4321 | xargs kill 2>/dev/null || true; \
