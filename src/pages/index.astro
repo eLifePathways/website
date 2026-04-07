@@ -1,6 +1,7 @@
 ---
 import '../styles/main.css';
 import Footer from '../components/Footer.astro';
+import LandingHero from '../components/LandingHero.astro';
 ---
 
 <!DOCTYPE html>
@@ -12,24 +13,7 @@ import Footer from '../components/Footer.astro';
   </head>
   <body>
     <main>
-      <section class="hero" data-theme="hero">
-        <header class="site-header">
-          <nav class="[ site-nav ] [ wrapper cluster ]">
-            <a class="site-nav__logo" href="/"><img src="/images/elife-pathways-logo.svg" alt="eLife Pathways" /></a>
-            <ul class="[ site-nav__links ] [ cluster ]" role="list">
-              <li><a href="/partnerships">Partnerships</a></li>
-              <li><a href="/solutions">Solutions</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a class="button" data-variant="pink" href="#">Get involved</a></li>
-            </ul>
-          </nav>
-        </header>
-        <div class="[ wrapper ] [ flow ] [ text-center ] hero-inner">
-          <h1><span>Building <em>better</em> ways</span><span>to share research<span class="hero-dot"></span></span></h1>
-          <p class="hero-body">An open-source technology initiative from eLife enabling more responsible ways to share scientific research and data.</p>
-        </div>
-      </section>
+      <LandingHero />
 
       <section class="content-section" data-theme="purple">
         <div class="[ wrapper ] [ columns ]">
