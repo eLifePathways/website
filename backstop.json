@@ -8,7 +8,15 @@
     { "label": "Home",         "url": "http://host.docker.internal:4321/",             "misMatchThreshold": 0, "delay": 500 },
     { "label": "About",        "url": "http://host.docker.internal:4321/about",        "misMatchThreshold": 0, "delay": 500 },
     { "label": "Solutions",    "url": "http://host.docker.internal:4321/solutions",    "misMatchThreshold": 0, "delay": 500 },
-    { "label": "Partnerships", "url": "http://host.docker.internal:4321/partnerships", "misMatchThreshold": 0, "delay": 500 }
+    { "label": "Partnerships", "url": "http://host.docker.internal:4321/partnerships", "misMatchThreshold": 0, "delay": 500 },
+    {
+      "label": "Mobile menu open",
+      "url": "http://host.docker.internal:4321/",
+      "misMatchThreshold": 0,
+      "delay": 500,
+      "onReadyScript": "open_mobile_menu.js",
+      "viewports": [{ "label": "mobile", "width": 320, "height": 812 }]
+    }
   ],
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference",
