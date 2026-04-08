@@ -139,7 +139,7 @@ details[open] .site-nav__mobile-links {
 }
 
 .site-nav__mobile-links a {
-  color: var(--color-peach-text);
+  color: var(--color-dark-purple);
   text-decoration: none;
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-semibold);
@@ -149,7 +149,7 @@ details[open] .site-nav__mobile-links {
   opacity: 0.75;
 }
 
-.site-nav__cta {
+.site-nav__mobile-links .site-nav__cta {
   color: var(--color-pink);
 }
 
