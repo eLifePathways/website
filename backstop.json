@@ -5,10 +5,10 @@
     { "label": "wide",   "width": 1280, "height": 800 }
   ],
   "scenarios": [
-    { "label": "Home",         "url": "http://host.docker.internal:4321/",             "misMatchThreshold": 0 },
-    { "label": "About",        "url": "http://host.docker.internal:4321/about",        "misMatchThreshold": 0 },
-    { "label": "Solutions",    "url": "http://host.docker.internal:4321/solutions",    "misMatchThreshold": 0 },
-    { "label": "Partnerships", "url": "http://host.docker.internal:4321/partnerships", "misMatchThreshold": 0 }
+    { "label": "Home",         "url": "http://host.docker.internal:4321/",             "misMatchThreshold": 0, "delay": 500 },
+    { "label": "About",        "url": "http://host.docker.internal:4321/about",        "misMatchThreshold": 0, "delay": 500 },
+    { "label": "Solutions",    "url": "http://host.docker.internal:4321/solutions",    "misMatchThreshold": 0, "delay": 500 },
+    { "label": "Partnerships", "url": "http://host.docker.internal:4321/partnerships", "misMatchThreshold": 0, "delay": 500 }
   ],
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference",
@@ -20,7 +20,7 @@
   "report": ["browser"],
   "engine": "puppeteer",
   "engineOptions": { "args": ["--no-sandbox"] },
-  "asyncCaptureLimit": 5,
+  "asyncCaptureLimit": 1,
   "asyncCompareLimit": 50,
   "dockerCommandTemplate": "docker run --rm -i --mount type=bind,source=\"{cwd}\",target=/src --workdir /src --add-host=host.docker.internal:host-gateway backstopjs/backstopjs:{version} {backstopCommand} {args}"
 }
