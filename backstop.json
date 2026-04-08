@@ -1,7 +1,7 @@
 {
   "id": "website",
   "viewports": [
-    { "label": "narrow", "width": 375,  "height": 812 },
+    { "label": "mobile", "width": 320,  "height": 812 },
     { "label": "wide",   "width": 1280, "height": 800 }
   ],
   "scenarios": [
