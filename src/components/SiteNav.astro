@@ -1,41 +1,19 @@
 <nav class="[ site-nav ] [ wrapper cluster ]">
+  <a class="site-nav__logo" href="/"><img src="/images/elife-pathways-logo.svg" alt="eLife Pathways" /></a>
 
-  <!-- Mobile: full-screen overlay details -->
-  <details class="site-nav__menu">
-    <summary class="site-nav__toggle">
-      <a class="site-nav__logo" href="/"><img src="/images/elife-pathways-logo.svg" alt="eLife Pathways" /></a>
-      <span class="site-nav__open-label" aria-hidden="true">
-        Menu
-        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <rect y="4"  width="24" height="2" fill="currentColor" />
-          <rect y="11" width="24" height="2" fill="currentColor" />
-          <rect y="18" width="24" height="2" fill="currentColor" />
-        </svg>
-      </span>
-      <span class="site-nav__close-label" aria-hidden="true">
-        Close
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
-          <line x1="2" y1="2" x2="14" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="14" y1="2" x2="2" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </span>
-    </summary>
-    <hr class="site-nav__rule" />
-    <ul class="site-nav__mobile-links" role="list">
-      <li><a href="/partnerships">Partnerships</a></li>
-      <li><a href="/solutions">Solutions</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a class="site-nav__cta" href="#">Get involved</a></li>
-    </ul>
-  </details>
+  <a href="#mobile-nav" class="site-nav__hamburger" aria-label="Open navigation menu">
+    <span aria-hidden="true">Menu</span>
+    <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <rect y="4"  width="24" height="2" fill="currentColor" />
+      <rect y="11" width="24" height="2" fill="currentColor" />
+      <rect y="18" width="24" height="2" fill="currentColor" />
+    </svg>
+  </a>
 
-  <!-- Desktop: logo + links -->
-  <a class="site-nav__logo site-nav__logo--desktop" href="/"><img src="/images/elife-pathways-logo.svg" alt="eLife Pathways" /></a>
   <ul class="[ site-nav__links ] [ cluster ]" role="list">
     <li><a href="/partnerships">Partnerships</a></li>
     <li><a href="/solutions">Solutions</a></li>
     <li><a href="/about">About</a></li>
     <li><a class="button" data-variant="pink" href="#">Get involved</a></li>
   </ul>
-
 </nav>

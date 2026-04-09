@@ -1,5 +1,6 @@
 module.exports = async (page, scenario, vp) => {
   await page.evaluate(() => {
-    document.querySelector('.site-nav__menu').open = true;
+    window.location.hash = 'mobile-nav';
   });
+  await new Promise(resolve => setTimeout(resolve, 300));
 };

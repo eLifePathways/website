@@ -11,10 +11,9 @@
     { "label": "Partnerships", "url": "http://host.docker.internal:4321/partnerships", "misMatchThreshold": 0, "delay": 500 },
     {
       "label": "Mobile menu open",
-      "url": "http://host.docker.internal:4321/",
+      "url": "http://host.docker.internal:4321/#mobile-nav",
       "misMatchThreshold": 0,
       "delay": 500,
-      "onReadyScript": "open_mobile_menu.js",
       "viewports": [{ "label": "mobile", "width": 320, "height": 812 }]
     }
   ],
