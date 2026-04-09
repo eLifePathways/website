@@ -33,7 +33,7 @@
   gap: var(--space-xs);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-semibold);
-  color: var(--color-peach-text);
+  color: var(--color-dark-purple);
   text-decoration: none;
 }
 
@@ -89,7 +89,7 @@
   gap: var(--space-xs);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-semibold);
-  color: var(--color-peach-text);
+  color: var(--color-dark-purple);
   text-decoration: none;
 }
 
