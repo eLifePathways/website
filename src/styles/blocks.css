@@ -277,6 +277,14 @@
   font-style: italic;
 }
 
+/* ---- partnerships-heading ---- */
+.partnerships-heading {
+  color: var(--color-dark-purple);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.5;
+}
+
 /* ---- site-footer ---- */
 .site-footer {
   padding-block: var(--space-lg);
