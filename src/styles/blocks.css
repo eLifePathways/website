@@ -461,4 +461,9 @@ body:has(.mobile-nav:target) {
     margin-bottom: var(--space-md);
     font-size: var(--font-size-4xl);
   }
+
+  .wrapper {
+    padding-inline: 150px;
+    max-width: 1200px;
+  }
 }
