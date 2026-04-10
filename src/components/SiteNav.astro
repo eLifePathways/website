@@ -1,7 +1,11 @@
-<nav class="[ site-nav ] [ wrapper cluster ]">
-  <a class="site-nav__logo" href="/"><img src="/images/elife-pathways-logo.svg" alt="eLife Pathways" /></a>
+---
+const { pathname } = Astro.url;
+---
 
-  <a href="#mobile-nav" class="site-nav__hamburger" aria-label="Open navigation menu">
+<nav class="[ site-nav ] [ wrapper cluster ]">
+  <a class="site-nav__logo" href="."><img src="images/elife-pathways-logo.svg" alt="eLife Pathways" /></a>
+
+  <a href={pathname + '#mobile-nav'} class="site-nav__hamburger" aria-label="Open navigation menu">
     <span aria-hidden="true">Menu</span>
     <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
       <rect y="4"  width="24" height="2" fill="currentColor" />
@@ -11,9 +15,9 @@
   </a>
 
   <ul class="[ site-nav__links ] [ cluster ]" role="list">
-    <li><a href="/partnerships">Partnerships</a></li>
-    <li><a href="/solutions">Solutions</a></li>
-    <li><a href="/about">About</a></li>
+    <li><a href="partnerships">Partnerships</a></li>
+    <li><a href="solutions">Solutions</a></li>
+    <li><a href="about">About</a></li>
     <li><a class="button" data-variant="pink" href="mailto:technology@elifesciences.org">Get involved</a></li>
   </ul>
 </nav>

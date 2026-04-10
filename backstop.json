@@ -5,13 +5,13 @@
     { "label": "wide",   "width": 1280, "height": 800 }
   ],
   "scenarios": [
-    { "label": "Home",         "url": "http://host.docker.internal:4321/",             "misMatchThreshold": 0, "delay": 500 },
-    { "label": "About",        "url": "http://host.docker.internal:4321/about",        "misMatchThreshold": 0, "delay": 500 },
-    { "label": "Solutions",    "url": "http://host.docker.internal:4321/solutions",    "misMatchThreshold": 0, "delay": 500 },
-    { "label": "Partnerships", "url": "http://host.docker.internal:4321/partnerships", "misMatchThreshold": 0, "delay": 500 },
+    { "label": "Home",         "url": "http://host.docker.internal:4321/website/",             "misMatchThreshold": 0, "delay": 500 },
+    { "label": "About",        "url": "http://host.docker.internal:4321/website/about",        "misMatchThreshold": 0, "delay": 500 },
+    { "label": "Solutions",    "url": "http://host.docker.internal:4321/website/solutions",    "misMatchThreshold": 0, "delay": 500 },
+    { "label": "Partnerships", "url": "http://host.docker.internal:4321/website/partnerships", "misMatchThreshold": 0, "delay": 500 },
     {
       "label": "Mobile menu open",
-      "url": "http://host.docker.internal:4321/#mobile-nav",
+      "url": "http://host.docker.internal:4321/website/#mobile-nav",
       "misMatchThreshold": 0,
       "delay": 500,
       "viewports": [{ "label": "mobile", "width": 320, "height": 812 }]

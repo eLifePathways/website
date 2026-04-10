@@ -168,7 +168,7 @@ body:has(.mobile-nav:target) {
   flex-direction: column;
   justify-content: center;
   background:
-    url('/images/hero-arc.svg') center var(--hero-arc-y) / 100% 100% no-repeat,
+    url('../assets/hero-arc.svg') center var(--hero-arc-y) / 100% 100% no-repeat,
     var(--gradient-peach-1);
 }
 
