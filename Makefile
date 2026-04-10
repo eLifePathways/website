@@ -1,16 +1,10 @@
-.PHONY: dev build docker docker-run backstop-reference backstop-test backstop-approve
-
-build: node_modules
-	npx astro build
-
-docker:
-	docker build -t website .
-
-docker-run: docker
-	docker run --rm -p 8080:80 website
+.PHONY: dev build backstop-reference backstop-test backstop-approve
 
 dev: node_modules
 	npx astro dev
+
+build: node_modules
+	npx astro build
 
 node_modules: package.json pnpm-lock.yaml
 	pnpm install --frozen-lockfile
