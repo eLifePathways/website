@@ -300,7 +300,6 @@ body:has(.mobile-nav:target) {
 
 .site-footer p {
   font-size: var(--font-size-xs);
-  opacity: 0.55;
 }
 
 /* ---- responsive ---- */
