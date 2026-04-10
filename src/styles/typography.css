@@ -91,6 +91,20 @@ p {
   line-height: var(--line-height-base);
 }
 
+/* Default link style (unclassed anchors) */
+a:not([class]) {
+  color: var(--color-brand-elife-pink);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+}
+
+a:not([class]):hover,
+a:not([class]):focus {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
 /* Italic emphasis (coloured words in headings) */
 h1 em,
 h2 em {
