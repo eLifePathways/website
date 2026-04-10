@@ -243,34 +243,6 @@ body:has(.mobile-nav:target) {
   color: var(--color-pink);
 }
 
-/* ---- news-section ---- */
-.news-section {
-  padding-block: var(--space-2xl);
-}
-
-.news-section .section-label {
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-peach-text);
-  margin-block-end: var(--space-md);
-}
-
-/* ---- card ---- */
-.card {
-  border: 1px solid rgba(27, 10, 60, 0.15);
-  border-radius: 0.5rem;
-  padding: var(--space-md);
-  --flow-space: var(--space-xs);
-}
-
-.card h3 {
-  color: var(--color-peach-text);
-}
-
-.card p {
-  color: rgba(27, 10, 60, 0.65);
-}
-
 /* ---- cta-section ---- */
 .cta-section {
   padding-block: var(--space-2xl);
