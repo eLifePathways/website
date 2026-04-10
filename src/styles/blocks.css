@@ -277,6 +277,38 @@
   font-style: italic;
 }
 
+/* ---- partner-logo ---- */
+.partner-logo {
+  width: 120px;
+  height: 102px;
+  aspect-ratio: 20 / 17;
+}
+
+.partner-logo--csf {
+  width: 109px;
+  height: 67px;
+  aspect-ratio: 109 / 67;
+}
+
+.partner-logo--openrxiv {
+  width: 209px;
+  height: 44px;
+  aspect-ratio: 19 / 4;
+}
+
+.partner-logo--comet {
+  width: 209px;
+  height: 44px;
+  aspect-ratio: 19 / 4;
+  background-color: hsla(201.82, 40.15%, 26.86%, 1);
+}
+
+.partner-logos {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
 /* ---- partnerships-heading ---- */
 .partnerships-heading {
   color: var(--color-dark-purple);

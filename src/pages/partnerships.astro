@@ -18,25 +18,37 @@ import PageHero from '../components/PageHero.astro';
       <p>By investing our resources into shared initiatives and aligning with others, we aim to move beyond isolated solutions to create a resilient, integrated ecosystem for open science. From empowering early-career researchers in the Global South to pioneering modular publishing paradigms with international collaborators, our work is driven by a "community-first" philosophy.</p>
     </PageHero>
 
-      <div class="wrapper">
-        <h2 class="partnerships-heading">Our partnerships:</h2>
-      </div>
+    <div class="wrapper">
+      <h2 class="partnerships-heading">Our partnerships:</h2>
+    </div>
 
       <section class="content-section" data-theme="purple">
         <div class="[ wrapper ] [ flow ]">
-          <h2>COAR</h2>
-          <p>[An in depth case study of the partnership with COAR etc. Should there be an existing, dedicated and more detailed blog post for each case study that we can link to? Or should all the necessary detail go here?]</p>
-          <p>Phasellus laoreet commodo risus non hendrerit. Ut eleifend ligula at urna varius ac pellentesque at integer sed dapibus lacus. Nam tempus mattis sollicitudin. Praesent sed lorem fermentum, mollis urna at blandit leo. Pellentesque feugiat bibendum est, quis tempus felis iaculis non. Cras rutrum tempor elit, eu maximas and ullamcorper is.</p>
+          <img src="/images/pkp-logo.png" alt="PKP" class="partner-logo" />
+          <p>We are partnering with <a href="https://pkp.sfu.ca/">Public Knowledge Project (PKP)</a> to develop a high-fidelity, JATS production solution. While JATS XML is the global standard for scholarly content, high costs and technical complexity exclude approximately 80% of open-access journals, largely in the Global South, from meeting these requirements.</p>
+          <p> By leveraging existing work and tools and enhancing them with open-source LLMs, this collaboration will develop a free, automated solution that enables any journal to produce standards-compliant, machine-readable metadata.</p>
         </div>
       </section>
 
       <section class="content-section" data-theme="navy">
         <div class="[ wrapper ] [ flow ]">
-          <h2>CSF</h2>
-          <p>[An in depth case study of the partnership with CSF etc. Should there be existing, dedicated and more detailed blog post for each case study that we can link to or should all the necessary detail go here?]</p>
-          <p>Phasellus laoreet commodo risus non hendrerit. Ut eleifend ligula at urna varius de pellentesque, integer sed dapibus lacus. Nam tempus mollis sollicitudin. Praesent sed lorem fermentum, mollis urna et blandit leo. Pellentesque feugiat bibendum est, quis tempus felis iaculis non. Cras rutrum tempor elit, eu maximas and ullamcorper is.</p>
+          <div class="partner-logos">
+            <img src="/images/csf-logo.png" alt="CSF" class="partner-logo partner-logo--csf" />
+            <img src="/images/openrxiv-logo.png" alt="openRxiv" class="partner-logo partner-logo--openrxiv" />
+          </div>
+          <p>In collaboration with the <a href="https://continuousfoundation.org/">Continuous Science Foundation (CSF)</a> and <a href="https://openrxiv.org/">openRxiv</a>, we are building the foundations for modular science. We are helping to develop the <a href="https://oxa.dev/">Open Exchange Architecture (OXA)</a>, a new community standard for interoperable, structured scientific content.</p>
+          <p>OXA defines open, extensible schemas that describe modular and composable scientific documents helping to bridge the gap between authoring systems and the scientific publishing ecosystem.</p>
         </div>
       </section>
+
+      <section class="content-section" data-theme="purple">
+        <div class="[ wrapper ] [ flow ]">
+          <img src="/images/comet-logo.png" alt="Comet" class="partner-logo partner-logo--comet" />
+          <p>In collaboration with <a href="https://www.cometadata.org/">COMET</a> we are advancing the open science ecosystem by building trusted models for community metadata curation and enrichment. Our efforts focus on enhancing metadata completeness, consistency, and interoperability through model training, data extraction, and transparent provenance documentation.</p>
+          <p>Our goal is to help COMET develop community-refined standards and ensure reliable and high-quality metadata across the entire research landscape.</p>
+        </div>
+      </section>
+
     </main>
     <Footer />
     <MobileNav />
