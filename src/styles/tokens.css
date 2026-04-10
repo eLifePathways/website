@@ -1,34 +1,31 @@
 :root {
-  /* Brand accent colors */
-  --color-pink: #D50072;
+  /* Colors */
+  --color-pink: #d50072;
+  --color-brand-elife-pink: #d71d62;
   --color-white: #ffffff;
   --color-dark-purple: #440535;
-
-  /* Background palette */
   --color-peach: #fce4c8;
   --gradient-peach-1: linear-gradient(to bottom, #ffe6bb 0%, #f6c6a7 100%);
   --color-cream: #fef6ee;
   --color-peach-text: #1b0a3c;
 
   /* Spacing scale */
-  --space-xs: 0.5rem;   /* 8px */
-  --space-sm: 0.75rem;  /* 12px */
-  --space-md: 1.5rem;   /* 24px */
-  --space-lg: 2.5rem;   /* 40px */
-  --space-xl: 4rem;     /* 64px */
-  --space-2xl: 6rem;    /* 96px */
-  --space-3xl: 9rem;    /* 144px */
+  --space-xs: 0.5rem; /* 8px */
+  --space-sm: 0.75rem; /* 12px */
+  --space-md: 1.5rem; /* 24px */
+  --space-lg: 2.5rem; /* 40px */
+  --space-xl: 4rem; /* 64px */
+  --space-2xl: 6rem; /* 96px */
+  --space-3xl: 9rem; /* 144px */
 
   /* Hero heights */
   --hero-height-default: 500px;
-  --hero-height-sm: 560px;   /* 30rem / 480px+ */
-  --hero-height-md: 640px;   /* 40rem / 640px+ */
-  --hero-height-lg: 760px;   /* 1000px+ */
-  --hero-height-xl: 880px;   /* 1200px+ */
+  --hero-height-sm: 560px; /* 30rem / 480px+ */
+  --hero-height-md: 640px; /* 40rem / 640px+ */
+  --hero-height-lg: 760px; /* 1000px+ */
+  --hero-height-xl: 880px; /* 1200px+ */
 
   /* Layout */
   --wrapper-max: 880px;
   --wrapper-padding: var(--space-md);
-
-
 }
