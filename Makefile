@@ -12,7 +12,7 @@ node_modules: package.json pnpm-lock.yaml
 backstop-reference: node_modules
 	lsof -ti:4321 | xargs kill 2>/dev/null || true; \
 	npx astro dev --port 4321 --host & DEV_PID=$$!; \
-	until curl -sf http://localhost:4321/website > /dev/null; do sleep 1; done; \
+	until curl -sf http://localhost:4321/ > /dev/null; do sleep 1; done; \
 	npx backstop reference --docker; STATUS=$$?; \
 	kill $$DEV_PID 2>/dev/null; \
 	exit $$STATUS
@@ -23,7 +23,7 @@ backstop-approve: node_modules
 backstop-test: node_modules
 	lsof -ti:4321 | xargs kill 2>/dev/null || true; \
 	npx astro dev --port 4321 --host & DEV_PID=$$!; \
-	until curl -sf http://localhost:4321/website > /dev/null; do sleep 1; done; \
+	until curl -sf http://localhost:4321/ > /dev/null; do sleep 1; done; \
 	npx backstop test --docker; STATUS=$$?; \
 	kill $$DEV_PID 2>/dev/null; \
 	exit $$STATUS
