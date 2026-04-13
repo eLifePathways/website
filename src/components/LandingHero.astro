@@ -11,6 +11,101 @@ import SiteNav from './SiteNav.astro';
 </header>
 
 <style>
+.landing-hero {
+  --hero-arc-y: 60px;
+
+  height: var(--hero-height-default);
+  padding-top: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    url("../assets/hero-arc.svg") center var(--hero-arc-y) / 100% 100% no-repeat,
+    var(--gradient-peach-1);
+}
+
+.landing-hero h1 > span {
+  display: block;
+}
+
+.landing-hero h1 {
+  font-size: clamp(26px, 8vw, 40px);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.05;
+  letter-spacing: -0.02rem;
+  color: var(--color-dark-purple);
+}
+
+.landing-hero h1 em {
+  color: var(--color-pink);
+  font-style: italic;
+}
+
+.hero-body {
+  color: var(--color-dark-purple);
+  font-size: clamp(var(--font-size-sm), 3vw, var(--font-size-lg));
+  line-height: 1.55;
+}
+
+.hero-dot {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  left: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-pink);
+  vertical-align: baseline;
+}
+
+@media (min-width: 30rem) {
+  .hero-dot {
+    width: 14px;
+    height: 14px;
+  }
+
+  .landing-hero {
+    --hero-arc-y: 80px;
+    height: var(--hero-height-sm);
+    padding-top: var(--space-md);
+  }
+}
+
+@media (min-width: 40rem) {
+  .hero-dot {
+    width: 18px;
+    height: 18px;
+  }
+
+  .landing-hero {
+    --hero-arc-y: 100px;
+    height: var(--hero-height-md);
+    padding-top: var(--space-lg);
+  }
+}
+
+@media (min-width: 50rem) {
+  .hero-dot {
+    width: 20px;
+    height: 20px;
+  }
+
+  .landing-hero {
+    --hero-arc-y: 130px;
+    height: var(--hero-height-lg);
+    padding-top: var(--space-lg);
+  }
+}
+
+@media (min-width: 75rem) {
+  .landing-hero {
+    --hero-arc-y: 165px;
+    height: var(--hero-height-xl);
+    padding-top: var(--space-xl);
+  }
+}
+
   .hero-inner {
   text-align: center;
   flex: 1;

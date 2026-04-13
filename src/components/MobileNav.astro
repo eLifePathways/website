@@ -21,3 +21,76 @@ const { pathname } = Astro.url;
     <li><a class="mobile-nav__cta" href="mailto:technology@elifesciences.org">Get involved</a></li>
   </ul>
 </nav>
+
+<style>
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav:target {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-cream);
+  padding: var(--space-md);
+  z-index: 100;
+  overflow-y: auto;
+}
+
+:global(body:has(.mobile-nav:target)) {
+  overflow: hidden;
+}
+
+.mobile-nav__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-nav__close {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-dark-purple);
+  text-decoration: none;
+}
+
+.mobile-nav__rule {
+  border: none;
+  border-top: 1px solid rgba(27, 10, 60, 0.15);
+  margin-block: var(--space-md);
+}
+
+.mobile-nav__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.mobile-nav__links a {
+  color: var(--color-dark-purple);
+  text-decoration: none;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+.mobile-nav__links a:hover {
+  opacity: 0.75;
+}
+
+.mobile-nav__cta {
+  color: var(--color-pink);
+}
+
+@media (min-width: 50rem) {
+  .mobile-nav:target {
+    display: none;
+  }
+}
+</style>

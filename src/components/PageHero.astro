@@ -19,6 +19,61 @@ const { pageTitle, pageHeading } = Astro.props;
 </header>
 
 <style>
+.page-hero {
+  min-height: var(--hero-height-default);
+  padding-top: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-cream);
+  color: var(--color-peach-text);
+}
+
+.page-hero h1 > span {
+  display: block;
+}
+
+.page-hero h1 {
+  font-size: clamp(26px, 8vw, 40px);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.05;
+  letter-spacing: -0.02rem;
+  color: var(--color-dark-purple);
+}
+
+.page-hero h1 em {
+  color: var(--color-pink);
+  font-style: italic;
+}
+
+@media (min-width: 30rem) {
+  .page-hero {
+    min-height: var(--hero-height-sm);
+    padding-top: var(--space-md);
+  }
+}
+
+@media (min-width: 40rem) {
+  .page-hero {
+    min-height: var(--hero-height-md);
+    padding-top: var(--space-lg);
+  }
+}
+
+@media (min-width: 50rem) {
+  .page-hero {
+    min-height: var(--hero-height-lg);
+    padding-top: var(--space-lg);
+  }
+}
+
+@media (min-width: 75rem) {
+  .page-hero {
+    min-height: var(--hero-height-xl);
+    padding-top: var(--space-xl);
+  }
+}
+
   .hero-inner {
   flex: 1;
   display: flex;
