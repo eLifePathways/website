@@ -17,6 +17,7 @@
   --space-xl: 4rem; /* 64px */
   --space-2xl: 6rem; /* 96px */
   --space-3xl: 9rem; /* 144px */
+  --space-m-xl: clamp(1.5rem, 0.6818rem + 4.0909vw, 3.75rem);
 
   /* Hero heights */
   --hero-height-default: 500px;
