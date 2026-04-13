@@ -285,6 +285,7 @@ body:has(.mobile-nav:target) {
 /* ---- site-footer ---- */
 .site-footer {
   padding-block: var(--space-lg);
+  background-color: var(--color-peach);
 }
 
 .site-footer p {

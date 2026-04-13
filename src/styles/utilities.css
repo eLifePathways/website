@@ -1,39 +1,9 @@
 /* ============================================
    UTILITIES
-   Single-purpose classes + theme exceptions.
-   The "U" and "E" in CUBE CSS.
+   Single-purpose classes.
+   The "U" in CUBE CSS.
    ============================================ */
 
 .text-center {
   text-align: center;
-}
-
-/* ---- Theme system via data attributes (Exception layer) ----
-   Sections declare a theme; child components inherit custom
-   properties for color without needing context-specific rules.
-   ------------------------------------------------------------ */
-
-[data-theme="hero"] {
-  background-color: var(--color-peach);
-  color: var(--color-peach-text);
-}
-
-[data-theme="purple"] {
-  background-color: var(--color-cream);
-  color: var(--color-peach-text);
-}
-
-[data-theme="navy"] {
-  background-color: var(--color-cream);
-  color: var(--color-peach-text);
-}
-
-[data-theme="dark"] {
-  background-color: var(--color-cream);
-  color: var(--color-peach-text);
-}
-
-[data-theme="light"] {
-  background-color: var(--color-peach);
-  color: var(--color-peach-text);
 }
