@@ -183,17 +183,6 @@ body:has(.mobile-nav:target) {
   color: var(--color-peach-text);
 }
 
-.hero-inner {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  max-width: 1200px;
-  margin-inline: auto;
-  padding-inline: 0;
-}
-
 .landing-hero h1 > span,
 .page-hero h1 > span {
   display: block;
@@ -326,10 +315,6 @@ body:has(.mobile-nav:target) {
     padding-inline: 36px;
   }
 
-  .hero-inner h1 {
-    font-size: clamp(26px, 8vw, 50px);
-  }
-
   .wrapper {
     padding-inline: 36px;
   }
@@ -361,10 +346,6 @@ body:has(.mobile-nav:target) {
     min-height: var(--hero-height-md);
     padding-top: var(--space-lg);
     padding-inline: 48px;
-  }
-
-  .hero-inner h1 {
-    font-size: clamp(50px, 7vw, 70px);
   }
 
   .wrapper {
@@ -421,15 +402,6 @@ body:has(.mobile-nav:target) {
     min-height: var(--hero-height-lg);
     padding-top: var(--space-lg);
   }
-
-  .hero-inner {
-    padding-inline: 7%;
-  }
-
-  .hero-inner h1 {
-    font-size: clamp(60px, 7vw, 80px);
-  }
-
   
 }
 
@@ -452,16 +424,7 @@ body:has(.mobile-nav:target) {
     min-height: var(--hero-height-xl);
     padding-top: var(--space-xl);
   }
-
-  .hero-inner {
-    padding: 0 150px;
-  }
-
-  .hero-inner h1 {
-    margin-bottom: var(--space-md);
-    font-size: var(--font-size-4xl);
-  }
-
+  
   .wrapper {
     padding-inline: 150px;
     max-width: 1200px;
