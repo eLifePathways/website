@@ -1,9 +1,3 @@
-/* ============================================
-   COMPOSITION
-   Layout primitives — the "C" in CUBE CSS.
-   These handle structural skeleton and spacing.
-   ============================================ */
-
 /* Wrapper: constrained, centered content region */
 .wrapper {
   max-width: var(--wrapper-max);
