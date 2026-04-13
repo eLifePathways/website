@@ -1,13 +1,13 @@
 .centered-content {
-  max-width: var(--wrapper-max);
+  max-width: 880px;
   margin-inline: auto;
-  padding-inline: var(--wrapper-padding);
+  padding-inline: var(--space-md);
 }
 
 .centered-content-wide {
-  max-width: var(--wrapper-max);
+  max-width: 880px;
   margin-inline: auto;
-  padding-inline: var(--wrapper-padding);
+  padding-inline: var(--space-md);
 }
 
 /* Flow: vertical rhythm between direct children */

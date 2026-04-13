@@ -24,8 +24,4 @@
   --hero-height-md: 640px; /* 40rem / 640px+ */
   --hero-height-lg: 760px; /* 1000px+ */
   --hero-height-xl: 880px; /* 1200px+ */
-
-  /* Layout */
-  --wrapper-max: 880px;
-  --wrapper-padding: var(--space-md);
 }
