@@ -11,6 +11,12 @@
   padding-inline: var(--wrapper-padding);
 }
 
+.centered-content {
+  max-width: var(--wrapper-max);
+  margin-inline: auto;
+  padding-inline: var(--wrapper-padding);
+}
+
 /* Flow: vertical rhythm between direct children */
 .flow > * + * {
   margin-block-start: var(--flow-space, var(--space-md));
