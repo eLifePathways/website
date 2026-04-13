@@ -316,10 +316,6 @@ body:has(.mobile-nav:target) {
     padding-inline: 36px;
   }
 
-  .wrapper {
-    padding-inline: 36px;
-  }
-
 }
 
 @media (min-width: 40rem /* md = 640px */) {
@@ -346,10 +342,6 @@ body:has(.mobile-nav:target) {
   .page-hero {
     min-height: var(--hero-height-md);
     padding-top: var(--space-lg);
-    padding-inline: 48px;
-  }
-
-  .wrapper {
     padding-inline: 48px;
   }
 }
@@ -424,10 +416,5 @@ body:has(.mobile-nav:target) {
   .page-hero {
     min-height: var(--hero-height-xl);
     padding-top: var(--space-xl);
-  }
-  
-  .wrapper {
-    padding-inline: 150px;
-    max-width: 1200px;
   }
 }
