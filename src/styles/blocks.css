@@ -162,7 +162,6 @@ body:has(.mobile-nav:target) {
 
   height: var(--hero-height-default);
   padding-top: var(--space-sm);
-  padding-inline: var(--space-md);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -303,7 +302,6 @@ body:has(.mobile-nav:target) {
     --hero-arc-y: 80px;
     height: var(--hero-height-sm);
     padding-top: var(--space-md);
-    padding-inline: 36px;
   }
 
   .page-hero {
@@ -330,7 +328,6 @@ body:has(.mobile-nav:target) {
     --hero-arc-y: 100px;
     height: var(--hero-height-md);
     padding-top: var(--space-lg);
-    padding-inline: 48px;
   }
 
   .page-hero {
