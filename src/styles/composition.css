@@ -45,13 +45,3 @@
   flex-grow: 999;
   min-inline-size: 50%;
 }
-
-/* Grid: responsive auto-fill grid */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(min(var(--grid-min-size, 200px), 100%), 1fr)
-  );
-  gap: var(--grid-gap, var(--space-md));
-}
