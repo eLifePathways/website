@@ -1,11 +1,10 @@
-/* Wrapper: constrained, centered content region */
-.wrapper {
+.centered-content {
   max-width: var(--wrapper-max);
   margin-inline: auto;
   padding-inline: var(--wrapper-padding);
 }
 
-.centered-content {
+.centered-content-wide {
   max-width: var(--wrapper-max);
   margin-inline: auto;
   padding-inline: var(--wrapper-padding);
