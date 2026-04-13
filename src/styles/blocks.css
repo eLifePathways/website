@@ -150,7 +150,6 @@ body:has(.mobile-nav:target) {
   margin-top: 2.25rem;
 }
 
-
 /* Exception: pink variant for CTA section */
 .button[data-variant="pink"] {
   background-color: var(--color-pink);
@@ -168,14 +167,13 @@ body:has(.mobile-nav:target) {
   flex-direction: column;
   justify-content: center;
   background:
-    url('../assets/hero-arc.svg') center var(--hero-arc-y) / 100% 100% no-repeat,
+    url("../assets/hero-arc.svg") center var(--hero-arc-y) / 100% 100% no-repeat,
     var(--gradient-peach-1);
 }
 
 .page-hero {
   min-height: var(--hero-height-default);
   padding-top: var(--space-sm);
-  padding-inline: var(--space-md);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -220,8 +218,6 @@ body:has(.mobile-nav:target) {
   background-color: var(--color-pink);
   vertical-align: baseline;
 }
-
-
 
 /* ---- content-section ---- */
 .content-section {
@@ -313,9 +309,7 @@ body:has(.mobile-nav:target) {
   .page-hero {
     min-height: var(--hero-height-sm);
     padding-top: var(--space-md);
-    padding-inline: 36px;
   }
-
 }
 
 @media (min-width: 40rem /* md = 640px */) {
@@ -342,7 +336,6 @@ body:has(.mobile-nav:target) {
   .page-hero {
     min-height: var(--hero-height-md);
     padding-top: var(--space-lg);
-    padding-inline: 48px;
   }
 }
 
@@ -395,7 +388,6 @@ body:has(.mobile-nav:target) {
     min-height: var(--hero-height-lg);
     padding-top: var(--space-lg);
   }
-  
 }
 
 @media (min-width: 75rem /* 1200px */) {

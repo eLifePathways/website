@@ -11,7 +11,7 @@ const { pageTitle, pageHeading } = Astro.props;
 
 <header class="page-hero" id="site-header">
   <SiteNav />
-  <div class="flow hero-inner">
+  <div class="centered-content flow hero-inner">
     <p class="section-label">{pageTitle}</p>
     <h1>{pageHeading}<em>.</em></h1>
     <slot />
@@ -25,9 +25,6 @@ const { pageTitle, pageHeading } = Astro.props;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: 1200px;
-  margin-inline: auto;
-  padding-inline: 0;
 }
 
 @media (min-width: 30rem /* sm = 480px */) {
@@ -48,13 +45,8 @@ const { pageTitle, pageHeading } = Astro.props;
   }
   }
 @media (min-width: 75rem /* 1200px */) {
-
-  .hero-inner {
-    padding: 0 150px;
-  }
-
   .hero-inner h1 {
-  margin-bottom: var(--space-md);
+    margin-bottom: var(--space-md);
     font-size: var(--font-size-4xl);
   }
 }
