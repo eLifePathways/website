@@ -267,6 +267,7 @@ body:has(.mobile-nav:target) {
   display: flex;
   align-items: center;
   gap: var(--space-md);
+  flex-wrap: wrap;
 }
 
 /* ---- partnerships-heading ---- */
