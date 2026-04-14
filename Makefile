@@ -1,10 +1,13 @@
-.PHONY: dev build backstop-reference backstop-test backstop-approve
+.PHONY: dev build lint backstop-reference backstop-test backstop-approve
 
 dev: node_modules
 	npx astro dev
 
 build: node_modules
 	npx astro build
+
+lint: node_modules
+	npx stylelint 'src/**/*.css'
 
 node_modules: package.json pnpm-lock.yaml
 	pnpm install --frozen-lockfile
