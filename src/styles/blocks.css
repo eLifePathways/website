@@ -6,6 +6,7 @@
    ============================================ */
 
 /* ---- site-nav__logo ---- */
+
 /* Shared between SiteNav and MobileNav */
 .site-nav__logo {
   color: var(--color-peach-text);
