@@ -5,16 +5,14 @@
    only what's unique to the component lives here.
    ============================================ */
 
-/* ---- site-nav__logo ---- */
-
 /* Shared between SiteNav and MobileNav */
-.site-nav__logo {
+.site-nav-logo {
   color: var(--color-peach-text);
   text-decoration: none;
   font-weight: var(--font-weight-regular);
 }
 
-.site-nav__logo img {
+.site-nav-logo img {
   height: 1.5rem;
   width: auto;
   display: block;
@@ -97,7 +95,7 @@
     font-size: var(--font-size-md);
   }
 
-  .site-nav__logo img {
+  .site-nav-logo img {
     height: 1.75rem;
   }
 }
