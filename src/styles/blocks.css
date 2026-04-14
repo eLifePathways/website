@@ -42,12 +42,6 @@
   margin-top: 2.25rem;
 }
 
-/* Exception: pink variant for CTA section */
-.button[data-variant="pink"] {
-  background-color: var(--color-pink);
-  color: var(--color-white);
-}
-
 /* ---- content-section ---- */
 .content-section {
   padding-block: var(--space-2xl);
