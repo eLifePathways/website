@@ -1,17 +1,37 @@
 {
   "id": "website",
   "viewports": [
-    { "label": "mobile",  "width": 320,  "height": 812 },
-    { "label": "480",     "width": 480,  "height": 812 },
-    { "label": "640",     "width": 640,  "height": 812 },
-    { "label": "800",     "width": 800,  "height": 812 },
-    { "label": "wide",    "width": 1280, "height": 800 }
+    { "label": "mobile", "width": 320, "height": 812 },
+    { "label": "480", "width": 480, "height": 812 },
+    { "label": "640", "width": 640, "height": 812 },
+    { "label": "800", "width": 800, "height": 812 },
+    { "label": "wide", "width": 1280, "height": 800 }
   ],
   "scenarios": [
-    { "label": "Home",         "url": "http://host.docker.internal:4321/",             "misMatchThreshold": 0, "delay": 500 },
-    { "label": "About",        "url": "http://host.docker.internal:4321/about",        "misMatchThreshold": 0, "delay": 500 },
-    { "label": "Solutions",    "url": "http://host.docker.internal:4321/solutions",    "misMatchThreshold": 0, "delay": 500 },
-    { "label": "Partnerships", "url": "http://host.docker.internal:4321/partnerships", "misMatchThreshold": 0, "delay": 500 },
+    {
+      "label": "Home",
+      "url": "http://host.docker.internal:4321/",
+      "misMatchThreshold": 0,
+      "delay": 500
+    },
+    {
+      "label": "About",
+      "url": "http://host.docker.internal:4321/about",
+      "misMatchThreshold": 0,
+      "delay": 500
+    },
+    {
+      "label": "Solutions",
+      "url": "http://host.docker.internal:4321/solutions",
+      "misMatchThreshold": 0,
+      "delay": 500
+    },
+    {
+      "label": "Partnerships",
+      "url": "http://host.docker.internal:4321/partnerships",
+      "misMatchThreshold": 0,
+      "delay": 500
+    },
     {
       "label": "Mobile menu open",
       "url": "http://host.docker.internal:4321/#mobile-nav",
@@ -22,10 +42,10 @@
   ],
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference",
-    "bitmaps_test":      "backstop_data/bitmaps_test",
-    "engine_scripts":    "backstop_data/engine_scripts",
-    "html_report":       "backstop_data/html_report",
-    "ci_report":         "backstop_data/ci_report"
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
   },
   "report": ["browser"],
   "engine": "puppeteer",
