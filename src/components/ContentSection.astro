@@ -1,14 +1,5 @@
----
-interface Props {
-  sectionTitle: string;
-}
-
-const { sectionTitle } = Astro.props;
----
-
 <section class="content-section">
   <div class="centered-content flow">
-    <h2>{sectionTitle}</h2>
     <slot />
   </div>
 </section>
