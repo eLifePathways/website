@@ -1,5 +1,5 @@
 ---
-import SiteNav from './SiteNav.astro';
+import SiteNav from "./SiteNav.astro";
 
 interface Props {
   pageTitle: string;
@@ -19,89 +19,88 @@ const { pageTitle, pageHeading } = Astro.props;
 </header>
 
 <style>
-.page-hero {
-  min-height: var(--hero-height-default);
-  padding-top: var(--space-sm);
-  background-color: var(--color-cream);
-  color: var(--color-peach-text);
-}
-
-.page-hero h1 > span {
-  display: block;
-}
-
-.page-hero h1 {
-  font-size: clamp(26px, 8vw, 40px);
-  font-weight: var(--font-weight-regular);
-  line-height: 1.05;
-  letter-spacing: -0.02rem;
-  color: var(--color-dark-purple);
-}
-
-.page-hero h1 em {
-  color: var(--color-pink);
-  font-style: italic;
-}
-
-@media (min-width: 30rem) {
   .page-hero {
-    min-height: var(--hero-height-sm);
-    padding-top: var(--space-md);
+    min-height: var(--hero-height-default);
+    padding-top: var(--space-sm);
+    background-color: var(--color-cream);
+    color: var(--color-peach-text);
   }
-}
 
-@media (min-width: 40rem) {
-  .page-hero {
-    min-height: var(--hero-height-md);
-    padding-top: var(--space-lg);
+  .page-hero h1 > span {
+    display: block;
   }
-}
 
-@media (min-width: 50rem) {
-  .page-hero {
-    min-height: var(--hero-height-lg);
-    padding-top: var(--space-lg);
+  .page-hero h1 {
+    font-size: clamp(26px, 8vw, 40px);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.05;
+    letter-spacing: -0.02rem;
+    color: var(--color-dark-purple);
   }
-}
 
-@media (min-width: 75rem) {
-  .page-hero {
-    min-height: var(--hero-height-xl);
-    padding-top: var(--space-xl);
+  .page-hero h1 em {
+    color: var(--color-pink);
+    font-style: italic;
   }
-}
 
-.section-label {
-  color: var(--color-pink);
-}
-
-.hero-inner {
-  width: 100%;
-  margin-top: clamp(2.000rem, calc(-1.341rem + 16.705vw), 11.188rem);;
-}
-
-@media (min-width: 30rem /* sm = 480px */) {
-  .hero-inner h1 {
-    font-size: clamp(26px, 8vw, 50px);
+  @media (min-width: 30rem) {
+    .page-hero {
+      min-height: var(--hero-height-sm);
+      padding-top: var(--space-md);
+    }
   }
-}
 
-@media (min-width: 40rem /* md = 640px */) {
-  .hero-inner h1 {
-    font-size: clamp(50px, 7vw, 70px);
+  @media (min-width: 40rem) {
+    .page-hero {
+      min-height: var(--hero-height-md);
+      padding-top: var(--space-lg);
+    }
   }
-}
 
-@media (min-width: 50rem /* 800px */) {
+  @media (min-width: 50rem) {
+    .page-hero {
+      min-height: var(--hero-height-lg);
+      padding-top: var(--space-lg);
+    }
+  }
 
-  .hero-inner h1 {
-    font-size: clamp(60px, 7vw, 80px);
+  @media (min-width: 75rem) {
+    .page-hero {
+      min-height: var(--hero-height-xl);
+      padding-top: var(--space-xl);
+    }
   }
+
+  .section-label {
+    color: var(--color-pink);
   }
-@media (min-width: 75rem /* 1200px */) {
-  .hero-inner h1 {
-    margin-bottom: var(--space-md);
-    font-size: var(--font-size-4xl);
+
+  .hero-inner {
+    width: 100%;
+    margin-top: clamp(2rem, calc(-1.341rem + 16.705vw), 11.188rem);
   }
-}
+
+  @media (min-width: 30rem /* sm = 480px */) {
+    .hero-inner h1 {
+      font-size: clamp(26px, 8vw, 50px);
+    }
+  }
+
+  @media (min-width: 40rem /* md = 640px */) {
+    .hero-inner h1 {
+      font-size: clamp(50px, 7vw, 70px);
+    }
+  }
+
+  @media (min-width: 50rem /* 800px */) {
+    .hero-inner h1 {
+      font-size: clamp(60px, 7vw, 80px);
+    }
+  }
+  @media (min-width: 75rem /* 1200px */) {
+    .hero-inner h1 {
+      margin-bottom: var(--space-md);
+      font-size: var(--font-size-4xl);
+    }
+  }
 </style>

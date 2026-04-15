@@ -4,12 +4,39 @@ const { pathname } = Astro.url;
 
 <nav class="mobile-nav" id="mobile-nav" aria-label="Site navigation">
   <div class="mobile-nav__header">
-    <a class="site-nav-logo" href="."><img src="images/elife-pathways-logo.svg" alt="eLife Pathways" /></a>
-    <a href={pathname + '#site-header'} class="mobile-nav__close" aria-label="Close navigation menu">
+    <a class="site-nav-logo" href="."
+      ><img src="images/elife-pathways-logo.svg" alt="eLife Pathways" /></a
+    >
+    <a
+      href={pathname + "#site-header"}
+      class="mobile-nav__close"
+      aria-label="Close navigation menu"
+    >
       <span aria-hidden="true">Close</span>
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
-        <line x1="2" y1="2" x2="14" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        <line x1="14" y1="2" x2="2" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <line
+          x1="2"
+          y1="2"
+          x2="14"
+          y2="14"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"></line>
+        <line
+          x1="14"
+          y1="2"
+          x2="2"
+          y2="14"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"></line>
       </svg>
     </a>
   </div>
@@ -18,79 +45,82 @@ const { pathname } = Astro.url;
     <li><a href="partnerships">Partnerships</a></li>
     <li><a href="solutions">Solutions</a></li>
     <li><a href="about">About</a></li>
-    <li><a class="mobile-nav__cta" href="mailto:technology@elifesciences.org">Get involved</a></li>
+    <li>
+      <a class="mobile-nav__cta" href="mailto:technology@elifesciences.org"
+        >Get involved</a>
+    </li>
   </ul>
 </nav>
 
 <style>
-.mobile-nav {
-  display: none;
-}
-
-.mobile-nav:target {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  inset: 0;
-  background-color: var(--color-cream);
-  padding: var(--space-md);
-  z-index: 100;
-  overflow-y: auto;
-}
-
-:global(body:has(.mobile-nav:target)) {
-  overflow: hidden;
-}
-
-.mobile-nav__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.mobile-nav__close {
-  display: flex;
-  align-items: center;
-  gap: var(--space-xs);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-dark-purple);
-  text-decoration: none;
-}
-
-.mobile-nav__rule {
-  border: none;
-  border-top: 1px solid rgba(27, 10, 60, 0.15);
-  margin-block: var(--space-md);
-}
-
-.mobile-nav__links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-md);
-}
-
-.mobile-nav__links a {
-  color: var(--color-dark-purple);
-  text-decoration: none;
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-semibold);
-}
-
-.mobile-nav__links a:hover {
-  opacity: 0.75;
-}
-
-.mobile-nav__cta {
-  color: var(--color-pink);
-}
-
-@media (min-width: 50rem) {
-  .mobile-nav:target {
+  .mobile-nav {
     display: none;
   }
-}
+
+  .mobile-nav:target {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 0;
+    background-color: var(--color-cream);
+    padding: var(--space-md);
+    z-index: 100;
+    overflow-y: auto;
+  }
+
+  :global(body:has(.mobile-nav:target)) {
+    overflow: hidden;
+  }
+
+  .mobile-nav__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile-nav__close {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-dark-purple);
+    text-decoration: none;
+  }
+
+  .mobile-nav__rule {
+    border: none;
+    border-top: 1px solid rgba(27, 10, 60, 0.15);
+    margin-block: var(--space-md);
+  }
+
+  .mobile-nav__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .mobile-nav__links a {
+    color: var(--color-dark-purple);
+    text-decoration: none;
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .mobile-nav__links a:hover {
+    opacity: 0.75;
+  }
+
+  .mobile-nav__cta {
+    color: var(--color-pink);
+  }
+
+  @media (min-width: 50rem) {
+    .mobile-nav:target {
+      display: none;
+    }
+  }
 </style>

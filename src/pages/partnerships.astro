@@ -1,54 +1,115 @@
 ---
-import '../styles/main.css';
-import Footer from '../components/Footer.astro';
-import MobileNav from '../components/MobileNav.astro';
-import PageHead from '../components/PageHead.astro';
-import PageHero from '../components/PageHero.astro';
+import "../styles/main.css";
+import Footer from "../components/Footer.astro";
+import MobileNav from "../components/MobileNav.astro";
+import PageHead from "../components/PageHead.astro";
+import PageHero from "../components/PageHero.astro";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <PageHead title="Partnerships — eLife Pathways" />
   </head>
   <body>
     <main>
-    <PageHero pageTitle="Partnerships" pageHeading="Advancing open science through innovation, together">
-      <p>We believe that building a truly equitable, global research ecosystem requires more than just better tools. It requires coordination and collaboration. We bridge technical inequalities by co-developing open-source infrastructure alongside a diverse community of researchers, technologists, and global partners.</p>
-      <p>By investing our resources into shared initiatives and aligning with others, we aim to move beyond isolated solutions to create a resilient, integrated ecosystem for open science. From empowering early-career researchers in the Global South to pioneering modular publishing paradigms with international collaborators, our work is driven by a "community-first" philosophy.</p>
-    </PageHero>
+      <PageHero
+        pageTitle="Partnerships"
+        pageHeading="Advancing open science through innovation, together"
+      >
+        <p>
+          We believe that building a truly equitable, global research ecosystem
+          requires more than just better tools. It requires coordination and
+          collaboration. We bridge technical inequalities by co-developing
+          open-source infrastructure alongside a diverse community of
+          researchers, technologists, and global partners.
+        </p>
+        <p>
+          By investing our resources into shared initiatives and aligning with
+          others, we aim to move beyond isolated solutions to create a
+          resilient, integrated ecosystem for open science. From empowering
+          early-career researchers in the Global South to pioneering modular
+          publishing paradigms with international collaborators, our work is
+          driven by a "community-first" philosophy.
+        </p>
+      </PageHero>
 
-    <div class="centered-content">
-      <h2 class="partnerships-heading">Our partnerships:</h2>
-    </div>
+      <div class="centered-content">
+        <h2 class="partnerships-heading">Our partnerships:</h2>
+      </div>
 
       <section class="content-section">
         <div class="centered-content flow">
           <img src="images/pkp-logo.png" alt="PKP" class="partner-logo" />
-          <p>We are partnering with <a href="https://pkp.sfu.ca/">Public Knowledge Project (PKP)</a> to build a high-fidelity JATS-XML production solution that gives journals more publishing options, regardless of platform or location. By enhancing existing tools with open-source LLMs, our approach will  lower the cost and complexity that exclude many open-access journals—especially in the global south—from this standard.</p>
-          <p>The result will be a free, automated way for any journal to produce standards-compliant, machine-readable metadata.</p>
+          <p>
+            We are partnering with <a href="https://pkp.sfu.ca/"
+              >Public Knowledge Project (PKP)</a
+            > to build a high-fidelity JATS-XML production solution that gives journals
+            more publishing options, regardless of platform or location. By enhancing
+            existing tools with open-source LLMs, our approach will lower the cost
+            and complexity that exclude many open-access journals—especially in the
+            global south—from this standard.
+          </p>
+          <p>
+            The result will be a free, automated way for any journal to produce
+            standards-compliant, machine-readable metadata.
+          </p>
         </div>
       </section>
 
       <section class="content-section">
         <div class="centered-content flow">
           <div class="partner-logos">
-            <img src="images/csf-logo.png" alt="CSF" class="partner-logo partner-logo--csf" />
-            <img src="images/openrxiv-logo.png" alt="openRxiv" class="partner-logo partner-logo--openrxiv" />
+            <img
+              src="images/csf-logo.png"
+              alt="CSF"
+              class="partner-logo partner-logo--csf"
+            />
+            <img
+              src="images/openrxiv-logo.png"
+              alt="openRxiv"
+              class="partner-logo partner-logo--openrxiv"
+            />
           </div>
-          <p>In collaboration with <a href="https://continuousfoundation.org/">Continuous Science Foundation (CSF)</a> and <a href="https://openrxiv.org/">openRxiv</a>, this work contributes to the foundations of modular science. Together, we are advancing the <a href="https://oxa.dev/">Open Exchange Architecture (OXA)</a>, a community-led standard for interoperable, structured scientific content.</p>
-          <p>OXA defines open, extensible schemas that support modular, composable scientific documents, helping bridge authoring tools and the broader scientific publishing ecosystem.</p>
+          <p>
+            In collaboration with <a href="https://continuousfoundation.org/"
+              >Continuous Science Foundation (CSF)</a
+            > and <a href="https://openrxiv.org/">openRxiv</a>, this work
+            contributes to the foundations of modular science. Together, we are
+            advancing the <a href="https://oxa.dev/"
+              >Open Exchange Architecture (OXA)</a
+            >, a community-led standard for interoperable, structured scientific
+            content.
+          </p>
+          <p>
+            OXA defines open, extensible schemas that support modular,
+            composable scientific documents, helping bridge authoring tools and
+            the broader scientific publishing ecosystem.
+          </p>
         </div>
       </section>
 
       <section class="content-section">
         <div class="centered-content flow">
-          <img src="images/comet-logo.png" alt="Comet" class="partner-logo partner-logo--comet" />
-          <p>In collaboration with <a href="https://www.cometadata.org/">COMET</a> we are advancing the open science ecosystem by building trusted models for community metadata curation and enrichment. Our efforts focus on enhancing metadata completeness, consistency, and interoperability through model training, data extraction, and transparent provenance documentation.</p>
-          <p>Our goal is to help COMET develop community-refined standards and ensure reliable and high-quality metadata across the entire research landscape.</p>
+          <img
+            src="images/comet-logo.png"
+            alt="Comet"
+            class="partner-logo partner-logo--comet"
+          />
+          <p>
+            In collaboration with <a href="https://www.cometadata.org/">COMET</a
+            > we are advancing the open science ecosystem by building trusted models
+            for community metadata curation and enrichment. Our efforts focus on enhancing
+            metadata completeness, consistency, and interoperability through model
+            training, data extraction, and transparent provenance documentation.
+          </p>
+          <p>
+            Our goal is to help COMET develop community-refined standards and
+            ensure reliable and high-quality metadata across the entire research
+            landscape.
+          </p>
         </div>
       </section>
-
     </main>
     <Footer />
     <MobileNav />
@@ -56,42 +117,42 @@ import PageHero from '../components/PageHero.astro';
 </html>
 
 <style>
-.partner-logo {
-  width: 120px;
-  height: 102px;
-  aspect-ratio: 20 / 17;
-}
+  .partner-logo {
+    width: 120px;
+    height: 102px;
+    aspect-ratio: 20 / 17;
+  }
 
-.partner-logo--csf {
-  width: 109px;
-  height: 67px;
-  aspect-ratio: 109 / 67;
-}
+  .partner-logo--csf {
+    width: 109px;
+    height: 67px;
+    aspect-ratio: 109 / 67;
+  }
 
-.partner-logo--openrxiv {
-  width: 209px;
-  height: 44px;
-  aspect-ratio: 19 / 4;
-}
+  .partner-logo--openrxiv {
+    width: 209px;
+    height: 44px;
+    aspect-ratio: 19 / 4;
+  }
 
-.partner-logo--comet {
-  width: 209px;
-  height: 44px;
-  aspect-ratio: 19 / 4;
-  background-color: hsla(201.82, 40.15%, 26.86%, 1);
-}
+  .partner-logo--comet {
+    width: 209px;
+    height: 44px;
+    aspect-ratio: 19 / 4;
+    background-color: hsla(201.82, 40.15%, 26.86%, 1);
+  }
 
-.partner-logos {
-  display: flex;
-  align-items: center;
-  gap: var(--space-md);
-  flex-wrap: wrap;
-}
+  .partner-logos {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+  }
 
-.partnerships-heading {
-  color: var(--color-dark-purple);
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-semibold);
-  line-height: 1.5;
-}
+  .partnerships-heading {
+    color: var(--color-dark-purple);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.5;
+  }
 </style>

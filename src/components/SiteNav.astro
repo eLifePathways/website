@@ -3,14 +3,26 @@ const { pathname } = Astro.url;
 ---
 
 <nav class="site-nav cluster">
-  <a class="site-nav-logo" href="."><img src="images/elife-pathways-logo.svg" alt="eLife Pathways" /></a>
+  <a class="site-nav-logo" href="."
+    ><img src="images/elife-pathways-logo.svg" alt="eLife Pathways" /></a
+  >
 
-  <a href={pathname + '#mobile-nav'} class="site-nav__hamburger" aria-label="Open navigation menu">
+  <a
+    href={pathname + "#mobile-nav"}
+    class="site-nav__hamburger"
+    aria-label="Open navigation menu"
+  >
     <span aria-hidden="true">Menu</span>
-    <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-      <rect y="4"  width="24" height="2" fill="currentColor" />
-      <rect y="11" width="24" height="2" fill="currentColor" />
-      <rect y="18" width="24" height="2" fill="currentColor" />
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <rect y="4" width="24" height="2" fill="currentColor"></rect>
+      <rect y="11" width="24" height="2" fill="currentColor"></rect>
+      <rect y="18" width="24" height="2" fill="currentColor"></rect>
     </svg>
   </a>
 
@@ -18,62 +30,67 @@ const { pathname } = Astro.url;
     <li><a href="partnerships">Partnerships</a></li>
     <li><a href="solutions">Solutions</a></li>
     <li><a href="about">About</a></li>
-    <li><a class="button" data-variant="pink" href="mailto:technology@elifesciences.org">Get involved</a></li>
+    <li>
+      <a
+        class="button"
+        data-variant="pink"
+        href="mailto:technology@elifesciences.org">Get involved</a>
+    </li>
   </ul>
 </nav>
 
 <style>
-.site-nav {
-  padding-block: var(--space-sm);
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
-  margin-inline: auto;
-  padding-inline: var(--space-m-xl);
-}
+  .site-nav {
+    padding-block: var(--space-sm);
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: var(--space-m-xl);
+  }
 
-.site-nav__hamburger {
-  display: flex;
-  align-items: center;
-  gap: var(--space-xs);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-dark-purple);
-  text-decoration: none;
-}
-
-.site-nav__links {
-  display: none;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  gap: var(--space-md);
-}
-
-.site-nav__links a {
-  color: var(--color-peach-text);
-  text-decoration: none;
-  opacity: 0.85;
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-semibold);
-}
-
-.site-nav__links a:hover {
-  opacity: 1;
-}
-
-.site-nav__links .button {
-  opacity: 1;
-  color: var(--color-white);
-}
-
-@media (min-width: 50rem) {
   .site-nav__hamburger {
-    display: none;
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-dark-purple);
+    text-decoration: none;
   }
 
   .site-nav__links {
-    display: flex;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: var(--space-md);
   }
-}
+
+  .site-nav__links a {
+    color: var(--color-peach-text);
+    text-decoration: none;
+    opacity: 0.85;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .site-nav__links a:hover {
+    opacity: 1;
+  }
+
+  .site-nav__links .button {
+    opacity: 1;
+    color: var(--color-white);
+  }
+
+  @media (min-width: 50rem) {
+    .site-nav__hamburger {
+      display: none;
+    }
+
+    .site-nav__links {
+      display: flex;
+    }
+  }
 </style>
