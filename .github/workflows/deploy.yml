@@ -10,7 +10,23 @@ permissions:
   id-token: write
 
 jobs:
+  visual-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: make backstop-test
+
   deploy:
+    needs: visual-regression
     runs-on: ubuntu-latest
     environment:
       name: github-pages
