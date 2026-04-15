@@ -1,4 +1,4 @@
-.PHONY: dev build lint lint-fix backstop-reference backstop-test backstop-approve
+.PHONY: dev build lint lint-fix prettier backstop-reference backstop-test backstop-approve
 
 dev: node_modules
 	npx astro dev
@@ -11,6 +11,9 @@ lint: node_modules
 
 lint-fix: node_modules
 	npx stylelint 'src/**/*.css' --fix
+
+prettier: node_modules
+	pnpm prettier --write src/. backstop_data/**/*.js backstop.json
 
 node_modules: package.json pnpm-lock.yaml
 	pnpm install --frozen-lockfile
