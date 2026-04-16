@@ -35,82 +35,84 @@ import ContentSection from "../components/ContentSection.astro";
         </p>
       </PageHero>
 
-      <div class="centered-content">
-        <h2 class="partnerships-heading">Our partnerships:</h2>
-      </div>
+      <section>
+        <div class="centered-content">
+          <h2 class="partnerships-heading">Our partnerships:</h2>
+        </div>
 
-      <ContentSection>
-        <h3>
-          <img src="images/pkp-logo.png" alt="PKP" class="partner-logo" />
-        </h3>
-        <p>
-          We are partnering with <a href="https://pkp.sfu.ca/"
-            >Public Knowledge Project (PKP)</a
-          > to build a high-fidelity JATS-XML production solution that gives journals
-          more publishing options, regardless of platform or location. By enhancing
-          existing tools with open-source LLMs, our approach will lower the cost and
-          complexity that exclude many open-access journals—especially in the global
-          south—from this standard.
-        </p>
-        <p>
-          The result will be a free, automated way for any journal to produce
-          standards-compliant, machine-readable metadata.
-        </p>
-      </ContentSection>
+        <ContentSection>
+          <h3>
+            <img src="images/pkp-logo.png" alt="PKP" class="partner-logo" />
+          </h3>
+          <p>
+            We are partnering with <a href="https://pkp.sfu.ca/"
+              >Public Knowledge Project (PKP)</a
+            > to build a high-fidelity JATS-XML production solution that gives journals
+            more publishing options, regardless of platform or location. By enhancing
+            existing tools with open-source LLMs, our approach will lower the cost and
+            complexity that exclude many open-access journals—especially in the global
+            south—from this standard.
+          </p>
+          <p>
+            The result will be a free, automated way for any journal to produce
+            standards-compliant, machine-readable metadata.
+          </p>
+        </ContentSection>
 
-      <ContentSection>
-        <h3>
-          <span class="partner-logos">
+        <ContentSection>
+          <h3>
+            <span class="partner-logos">
+              <img
+                src="images/csf-logo.png"
+                alt="CSF"
+                class="partner-logo partner-logo--csf"
+              />
+              <img
+                src="images/openrxiv-logo.png"
+                alt="openRxiv"
+                class="partner-logo partner-logo--openrxiv"
+              />
+            </span>
+          </h3>
+          <p>
+            In collaboration with <a href="https://continuousfoundation.org/"
+              >Continuous Science Foundation (CSF)</a
+            > and <a href="https://openrxiv.org/">openRxiv</a>, this work
+            contributes to the foundations of modular science. Together, we are
+            advancing the <a href="https://oxa.dev/"
+              >Open Exchange Architecture (OXA)</a
+            >, a community-led standard for interoperable, structured scientific
+            content.
+          </p>
+          <p>
+            OXA defines open, extensible schemas that support modular, composable
+            scientific documents, helping bridge authoring tools and the broader
+            scientific publishing ecosystem.
+          </p>
+        </ContentSection>
+
+        <ContentSection>
+          <h3>
             <img
-              src="images/csf-logo.png"
-              alt="CSF"
-              class="partner-logo partner-logo--csf"
+              src="images/comet-logo.png"
+              alt="Comet"
+              class="partner-logo partner-logo--comet"
             />
-            <img
-              src="images/openrxiv-logo.png"
-              alt="openRxiv"
-              class="partner-logo partner-logo--openrxiv"
-            />
-          </span>
-        </h3>
-        <p>
-          In collaboration with <a href="https://continuousfoundation.org/"
-            >Continuous Science Foundation (CSF)</a
-          > and <a href="https://openrxiv.org/">openRxiv</a>, this work
-          contributes to the foundations of modular science. Together, we are
-          advancing the <a href="https://oxa.dev/"
-            >Open Exchange Architecture (OXA)</a
-          >, a community-led standard for interoperable, structured scientific
-          content.
-        </p>
-        <p>
-          OXA defines open, extensible schemas that support modular, composable
-          scientific documents, helping bridge authoring tools and the broader
-          scientific publishing ecosystem.
-        </p>
-      </ContentSection>
-
-      <ContentSection>
-        <h3>
-          <img
-            src="images/comet-logo.png"
-            alt="Comet"
-            class="partner-logo partner-logo--comet"
-          />
-        </h3>
-        <p>
-          In collaboration with <a href="https://www.cometadata.org/">COMET</a> we
-          are advancing the open science ecosystem by building trusted models for
-          community metadata curation and enrichment. Our efforts focus on enhancing
-          metadata completeness, consistency, and interoperability through model training,
-          data extraction, and transparent provenance documentation.
-        </p>
-        <p>
-          Our goal is to help COMET develop community-refined standards and
-          ensure reliable and high-quality metadata across the entire research
-          landscape.
-        </p>
-      </ContentSection>
+          </h3>
+          <p>
+            In collaboration with <a href="https://www.cometadata.org/">COMET</a> we
+            are advancing the open science ecosystem by building trusted models for
+            community metadata curation and enrichment. Our efforts focus on enhancing
+            metadata completeness, consistency, and interoperability through model training,
+            data extraction, and transparent provenance documentation.
+          </p>
+          <p>
+            Our goal is to help COMET develop community-refined standards and
+            ensure reliable and high-quality metadata across the entire research
+            landscape.
+          </p>
+        </ContentSection>
+      </section>
     </main>
     <Footer />
     <MobileNav />
