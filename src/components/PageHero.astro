@@ -89,19 +89,20 @@ const { pageTitle, pageHeading } = Astro.props;
 
   @media (min-width: 40rem /* md = 640px */) {
     .hero-inner h1 {
-      font-size: clamp(50px, 7vw, 70px);
+      font-size: clamp(50px, 7vw, 4.4375rem);
     }
   }
 
   @media (min-width: 50rem /* 800px */) {
     .hero-inner h1 {
-      font-size: clamp(60px, 7vw, 80px);
+      font-size: clamp(60px, 7vw, 4.4375rem);
     }
   }
   @media (min-width: 75rem /* 1200px */) {
     .hero-inner h1 {
       margin-bottom: var(--space-md);
-      font-size: var(--font-size-4xl);
+      line-height: calc(78 / 71);
+      font-size: 4.4375rem; /* 71px */
     }
   }
 </style>
