@@ -41,14 +41,6 @@
   margin-top: 2.25rem;
 }
 
-.homepage-content-section {
-  padding-block: var(--space-2xl);
-}
-
-.homepage-content-section h2 em {
-  color: var(--color-pink);
-}
-
 /* ---- responsive ---- */
 @media (min-width: 30rem /* sm = 480px */) {
   h2 {
