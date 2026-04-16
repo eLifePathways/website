@@ -41,14 +41,6 @@
   margin-top: 2.25rem;
 }
 
-.content-section {
-  padding-block: var(--space-2xl);
-}
-
-.content-section h2 em {
-  color: var(--color-pink);
-}
-
 .homepage-content-section {
   padding-block: var(--space-2xl);
 }
