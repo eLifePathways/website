@@ -13,7 +13,7 @@ const { pageTitle, pageHeading } = Astro.props;
   <SiteNav />
   <div class="centered-content flow hero-inner">
     <p class="section-label">{pageTitle}</p>
-    <h1>{pageHeading}<em>.</em></h1>
+    <h1>{pageHeading}<span>.</span></h1>
     <slot />
   </div>
 </header>
@@ -35,7 +35,7 @@ const { pageTitle, pageHeading } = Astro.props;
     color: var(--color-dark-purple);
   }
 
-  .page-hero h1 em {
+  .page-hero h1 span {
     color: var(--color-pink);
     font-style: normal;
   }
