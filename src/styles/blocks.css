@@ -5,6 +5,18 @@
    only what's unique to the component lives here.
    ============================================ */
 
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transform: translateY(-100%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 /* Shared between SiteNav and MobileNav */
 .site-nav-logo {
   color: var(--color-peach-text);

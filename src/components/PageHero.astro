@@ -13,7 +13,7 @@ const { pageTitle, pageHeading } = Astro.props;
   <SiteNav />
   <div class="centered-content flow hero-inner">
     <p class="section-label">{pageTitle}</p>
-    <h1>{pageHeading}<span>.</span></h1>
+    <h1 id="main-content">{pageHeading}<span>.</span></h1>
     <slot />
   </div>
 </header>
