@@ -52,10 +52,6 @@
   h2 {
     font-size: var(--font-size-2xl);
   }
-
-  p {
-    font-size: var(--font-size-base);
-  }
 }
 
 @media (min-width: 50rem /* 800px */) {
@@ -82,10 +78,6 @@
 }
 
 @media (min-width: 75rem /* 1200px */) {
-  p {
-    font-size: var(--font-size-md);
-  }
-
   .site-nav-logo img {
     height: 1.75rem;
   }
