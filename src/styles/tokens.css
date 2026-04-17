@@ -22,6 +22,7 @@
     calc(2.386rem + 6.818vw),
     7.5rem
   );
+  --large-vertical-space: clamp(6.25rem, calc(2.841rem + 17.045vw), 15.625rem);
 
   /* Hero heights */
   --hero-height-default: 500px;
