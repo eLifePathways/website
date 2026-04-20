@@ -117,7 +117,7 @@ a:not([class]):focus {
 }
 
 /* Italic emphasis (coloured words in headings) */
-h1 em,
-h2 em {
+h1 i,
+h2 i {
   font-style: italic;
 }
