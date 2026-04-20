@@ -55,8 +55,8 @@ h2 .dot {
   display: inline-block;
   position: relative;
   top: 2px;
-  width: 8px;
-  height: 8px;
+  width: 0.5rem;
+  height: 0.5rem;
   background-color: var(--color-pink);
   border-radius: 50%;
   margin-left: 0.15em;
@@ -65,15 +65,15 @@ h2 .dot {
 
 @media (min-width: 30rem) {
   h2 .dot {
-    width: 10px;
-    height: 10px;
+    width: 0.625rem;
+    height: 0.625rem;
   }
 }
 
 @media (min-width: 40rem) {
   h2 .dot {
-    width: 12px;
-    height: 12px;
+    width: 0.75rem;
+    height: 0.75rem;
   }
 }
 
