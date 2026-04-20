@@ -1,0 +1,51 @@
+---
+import "../styles/main.css";
+import ContentSection from "../components/ContentSection.astro";
+import Footer from "../components/Footer.astro";
+import MobileNav from "../components/MobileNav.astro";
+import PageHead from "../components/PageHead.astro";
+import PageHero from "../components/PageHero.astro";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  entry: CollectionEntry<"pages">;
+}
+
+const { entry } = Astro.props;
+const { title, pageTitle, pageHeading, intro, sections } = entry.data;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <PageHead title={title} />
+  </head>
+  <body>
+    <main>
+      <PageHero pageTitle={pageTitle} pageHeading={pageHeading}>
+        {intro.map((paragraph) => <p set:html={paragraph} />)}
+      </PageHero>
+      {
+        sections.map((section) => (
+          <ContentSection>
+            <h2>{section.heading}</h2>
+            {section.body.map((paragraph) => (
+              <p set:html={paragraph} />
+            ))}
+          </ContentSection>
+        ))
+      }
+    </main>
+    <Footer />
+    <MobileNav />
+  </body>
+</html>
+
+<style>
+  h2 {
+    color: var(--color-dark-purple);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.5;
+  }
+</style>

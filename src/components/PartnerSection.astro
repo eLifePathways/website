@@ -1,4 +1,3 @@
-
 ---
 import ContentSection from "./ContentSection.astro";
 
@@ -13,9 +12,11 @@ const { logos } = Astro.props as { logos: Logo[] };
 
 <ContentSection>
   <h3>
-    {logos.map(({ src, alt, width }) => (
-      <img src={src} alt={alt} style={`width: ${width}`} />
-    ))}
+    {
+      logos.map(({ src, alt, width }) => (
+        <img src={src} alt={alt} style={`width: ${width}`} />
+      ))
+    }
   </h3>
   <slot />
 </ContentSection>
