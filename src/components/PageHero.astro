@@ -13,7 +13,7 @@ const { pageTitle, pageHeading } = Astro.props;
   <SiteNav />
   <div class="centered-content flow hero-inner">
     <p class="section-label">{pageTitle}</p>
-    <h1 id="main-content">{pageHeading}<span>.</span></h1>
+    <h1 id="main-content">{pageHeading}</h1>
     <slot />
   </div>
 </header>
@@ -35,9 +35,10 @@ const { pageTitle, pageHeading } = Astro.props;
     color: var(--color-dark-purple);
   }
 
-  .page-hero h1 span {
+  .page-hero h1::after {
     color: var(--color-pink);
     font-style: normal;
+    content: ".";
   }
 
   @media (min-width: 30rem) {
