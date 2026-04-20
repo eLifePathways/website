@@ -4,7 +4,7 @@ import Footer from "../components/Footer.astro";
 import MobileNav from "../components/MobileNav.astro";
 import PageHead from "../components/PageHead.astro";
 import PageHero from "../components/PageHero.astro";
-import PartnershipSection from "../components/PartnershipSection.astro";
+import PartnerSection from "../components/PartnerSection.astro";
 ---
 
 <!doctype html>
@@ -40,7 +40,7 @@ import PartnershipSection from "../components/PartnershipSection.astro";
           <h2 class="partnerships-heading">Our partnerships:</h2>
         </div>
 
-        <PartnershipSection logos={[{ src: "images/pkp-logo.png", alt: "PKP: Public Knowledge Project", width: "120px" }]}>
+        <PartnerSection logos={[{ src: "images/pkp-logo.png", alt: "PKP: Public Knowledge Project", width: "120px" }]}>
           <p>
             We are partnering with <a href="https://pkp.sfu.ca/"
               >Public Knowledge Project (PKP)</a
@@ -54,9 +54,9 @@ import PartnershipSection from "../components/PartnershipSection.astro";
             The result will be a free, automated way for any journal to produce
             standards-compliant, machine-readable metadata.
           </p>
-        </PartnershipSection>
+        </PartnerSection>
 
-        <PartnershipSection logos={[
+        <PartnerSection logos={[
           { src: "images/csf-logo.png", alt: "CSF", width: "109px" },
           { src: "images/openrxiv-logo.png", alt: "openRxiv", width: "209px" },
         ]}>
@@ -75,9 +75,9 @@ import PartnershipSection from "../components/PartnershipSection.astro";
             composable scientific documents, helping bridge authoring tools and
             the broader scientific publishing ecosystem.
           </p>
-        </PartnershipSection>
+        </PartnerSection>
 
-        <PartnershipSection logos={[{ src: "images/comet-logo.svg", alt: "Comet", width: "209px" }]}>
+        <PartnerSection logos={[{ src: "images/comet-logo.svg", alt: "Comet", width: "209px" }]}>
           <p>
             In collaboration with <a href="https://www.cometadata.org/">COMET</a
             > we are advancing the open science ecosystem by building trusted models
@@ -90,7 +90,7 @@ import PartnershipSection from "../components/PartnershipSection.astro";
             ensure reliable and high-quality metadata across the entire research
             landscape.
           </p>
-        </PartnershipSection>
+        </PartnerSection>
       </section>
     </main>
     <Footer />
