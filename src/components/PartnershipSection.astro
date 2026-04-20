@@ -1,0 +1,30 @@
+
+---
+import ContentSection from "./ContentSection.astro";
+
+interface Logo {
+  src: string;
+  alt: string;
+  width: string;
+}
+
+const { logos } = Astro.props as { logos: Logo[] };
+---
+
+<ContentSection>
+  <h3>
+    {logos.map(({ src, alt, width }) => (
+      <img src={src} alt={alt} style={`width: ${width}`} />
+    ))}
+  </h3>
+  <slot />
+</ContentSection>
+
+<style>
+  h3 {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+  }
+</style>

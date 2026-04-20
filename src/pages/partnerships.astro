@@ -4,7 +4,7 @@ import Footer from "../components/Footer.astro";
 import MobileNav from "../components/MobileNav.astro";
 import PageHead from "../components/PageHead.astro";
 import PageHero from "../components/PageHero.astro";
-import ContentSection from "../components/ContentSection.astro";
+import PartnershipSection from "../components/PartnershipSection.astro";
 ---
 
 <!doctype html>
@@ -40,14 +40,7 @@ import ContentSection from "../components/ContentSection.astro";
           <h2 class="partnerships-heading">Our partnerships:</h2>
         </div>
 
-        <ContentSection>
-          <h3>
-            <img
-              src="images/pkp-logo.png"
-              alt="PKP: Public Knowledge Project"
-              class="partner-logo-pkp"
-            />
-          </h3>
+        <PartnershipSection logos={[{ src: "images/pkp-logo.png", alt: "PKP: Public Knowledge Project", width: "120px" }]}>
           <p>
             We are partnering with <a href="https://pkp.sfu.ca/"
               >Public Knowledge Project (PKP)</a
@@ -61,23 +54,12 @@ import ContentSection from "../components/ContentSection.astro";
             The result will be a free, automated way for any journal to produce
             standards-compliant, machine-readable metadata.
           </p>
-        </ContentSection>
+        </PartnershipSection>
 
-        <ContentSection>
-          <h3>
-            <span class="partner-logos">
-              <img
-                src="images/csf-logo.png"
-                alt="CSF"
-                class="partner-logo partner-logo-csf"
-              />
-              <img
-                src="images/openrxiv-logo.png"
-                alt="openRxiv"
-                class="partner-logo partner-logo-openrxiv"
-              />
-            </span>
-          </h3>
+        <PartnershipSection logos={[
+          { src: "images/csf-logo.png", alt: "CSF", width: "109px" },
+          { src: "images/openrxiv-logo.png", alt: "openRxiv", width: "209px" },
+        ]}>
           <p>
             In collaboration with <a href="https://continuousfoundation.org/"
               >Continuous Science Foundation (CSF)</a
@@ -93,16 +75,9 @@ import ContentSection from "../components/ContentSection.astro";
             composable scientific documents, helping bridge authoring tools and
             the broader scientific publishing ecosystem.
           </p>
-        </ContentSection>
+        </PartnershipSection>
 
-        <ContentSection>
-          <h3>
-            <img
-              src="images/comet-logo.svg"
-              alt="Comet"
-              class="partner-logo partner-logo-comet"
-            />
-          </h3>
+        <PartnershipSection logos={[{ src: "images/comet-logo.svg", alt: "Comet", width: "209px" }]}>
           <p>
             In collaboration with <a href="https://www.cometadata.org/">COMET</a
             > we are advancing the open science ecosystem by building trusted models
@@ -115,7 +90,7 @@ import ContentSection from "../components/ContentSection.astro";
             ensure reliable and high-quality metadata across the entire research
             landscape.
           </p>
-        </ContentSection>
+        </PartnershipSection>
       </section>
     </main>
     <Footer />
@@ -124,29 +99,6 @@ import ContentSection from "../components/ContentSection.astro";
 </html>
 
 <style>
-  .partner-logo-pkp {
-    width: 120px;
-  }
-
-  .partner-logo-csf {
-    width: 109px;
-  }
-
-  .partner-logo-openrxiv {
-    width: 209px;
-  }
-
-  .partner-logo-comet {
-    width: 209px;
-  }
-
-  .partner-logos {
-    display: flex;
-    align-items: center;
-    gap: var(--space-md);
-    flex-wrap: wrap;
-  }
-
   .partnerships-heading {
     color: var(--color-dark-purple);
     font-size: var(--font-size-lg);
