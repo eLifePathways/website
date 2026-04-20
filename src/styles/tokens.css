@@ -26,8 +26,8 @@
 
   /* Hero heights */
   --hero-height-default: 500px;
-  --hero-height-sm: 560px; /* 30rem / 480px+ */
-  --hero-height-md: 640px; /* 40rem / 640px+ */
-  --hero-height-lg: 760px; /* 1000px+ */
-  --hero-height-xl: 880px; /* 1200px+ */
+  --hero-height-sm: 35rem;
+  --hero-height-md: 40rem;
+  --hero-height-lg: 47.5rem;
+  --hero-height-xl: 55rem;
 }
