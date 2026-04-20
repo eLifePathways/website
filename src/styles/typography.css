@@ -115,9 +115,3 @@ a:not([class]):focus {
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
-
-/* Italic emphasis (coloured words in headings) */
-h1 i,
-h2 i {
-  font-style: italic;
-}
