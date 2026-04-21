@@ -40,7 +40,15 @@ import PartnerSection from "../components/PartnerSection.astro";
           <h2 class="partnerships-heading">Our partnerships:</h2>
         </div>
 
-        <PartnerSection logos={[{ src: "images/pkp-logo.png", alt: "PKP: Public Knowledge Project", width: "120px" }]}>
+        <PartnerSection
+          logos={[
+            {
+              src: "images/pkp-logo.png",
+              alt: "PKP: Public Knowledge Project",
+              width: "120px",
+            },
+          ]}
+        >
           <p>
             We are partnering with <a href="https://pkp.sfu.ca/"
               >Public Knowledge Project (PKP)</a
@@ -56,10 +64,16 @@ import PartnerSection from "../components/PartnerSection.astro";
           </p>
         </PartnerSection>
 
-        <PartnerSection logos={[
-          { src: "images/csf-logo.png", alt: "CSF", width: "109px" },
-          { src: "images/openrxiv-logo.png", alt: "openRxiv", width: "209px" },
-        ]}>
+        <PartnerSection
+          logos={[
+            { src: "images/csf-logo.png", alt: "CSF", width: "109px" },
+            {
+              src: "images/openrxiv-logo.png",
+              alt: "openRxiv",
+              width: "209px",
+            },
+          ]}
+        >
           <p>
             In collaboration with <a href="https://continuousfoundation.org/"
               >Continuous Science Foundation (CSF)</a
@@ -77,7 +91,11 @@ import PartnerSection from "../components/PartnerSection.astro";
           </p>
         </PartnerSection>
 
-        <PartnerSection logos={[{ src: "images/comet-logo.svg", alt: "Comet", width: "209px" }]}>
+        <PartnerSection
+          logos={[
+            { src: "images/comet-logo.svg", alt: "Comet", width: "209px" },
+          ]}
+        >
           <p>
             In collaboration with <a href="https://www.cometadata.org/">COMET</a
             > we are advancing the open science ecosystem by building trusted models
