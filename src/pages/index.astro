@@ -4,6 +4,7 @@ import Footer from "../components/Footer.astro";
 import LandingHero from "../components/LandingHero.astro";
 import MobileNav from "../components/MobileNav.astro";
 import PageHead from "../components/PageHead.astro";
+import QuotesFigure from "../components/QuotesFigure.astro";
 ---
 
 <!doctype html>
@@ -72,25 +73,7 @@ import PageHead from "../components/PageHead.astro";
       </section>
 
       <section class="quotes-section hidden">
-        <figure>
-          <blockquote>
-            Advancing a preprint-first culture requires a shared commitment. eLife Pathways helps to build a trustworthy and interconnected ecosystem that prioritises transparency, connection, and mutual trust.
-          </blockquote>
-          <figcaption>
-            <img
-              class="quote-headshot"
-              src="images/tracy-teal.png"
-              alt="Headshot of Tracy Teal"
-            />
-            <div>Tracy Teal</div>
-            <div>OpenRxiv</div>
-            <img
-              class="logo"
-              src="images/openrxiv-logo.png"
-              alt="Logo of OpenRxiv"
-            />
-          </figcaption>
-        </figure>
+        <QuotesFigure />
       </section>
     </main>
 
@@ -120,15 +103,5 @@ import PageHead from "../components/PageHead.astro";
 
   .hidden {
     display: none;
-  }
-
-  .quote-headshot {
-    width: 80px;
-    height: 80px;
-    border-radius: 400px;
-  }
-
-  .logo {
-    width: 104px;
   }
 </style>
