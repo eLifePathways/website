@@ -78,12 +78,14 @@ import PageHead from "../components/PageHead.astro";
           </blockquote>
           <figcaption>
             <img
-              src="images/tracy-teal.jpg"
+              class="quote-headshot"
+              src="images/tracy-teal.png"
               alt="Headshot of Tracy Teal"
             />
             <div>Tracy Teal</div>
             <div>OpenRxiv</div>
             <img
+              class="logo"
               src="images/openrxiv-logo.png"
               alt="Logo of OpenRxiv"
             />
@@ -118,5 +120,15 @@ import PageHead from "../components/PageHead.astro";
 
   .hidden {
     display: none;
+  }
+
+  .quote-headshot {
+    width: 80px;
+    height: 80px;
+    border-radius: 400px;
+  }
+
+  .logo {
+    width: 104px;
   }
 </style>
