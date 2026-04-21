@@ -70,10 +70,22 @@ import PageHead from "../components/PageHead.astro";
           </div>
         </div>
       </section>
+
+      <section class="quotes-section hidden">Quotes go here</section>
     </main>
 
     <Footer />
     <MobileNav />
+
+    <script>
+      // Feature flag to only display the quotes section when the query string contains 'quotes'.
+      (() => {
+        "use strict";
+        if (window.location.search.includes("quotes")) {
+          document.querySelector(".quotes-section").classList.remove("hidden");
+        }
+      })();
+    </script>
   </body>
 </html>
 
@@ -84,5 +96,9 @@ import PageHead from "../components/PageHead.astro";
 
   .homepage-content-section h2 i {
     color: var(--color-pink);
+  }
+
+  .hidden {
+    display: none;
   }
 </style>
