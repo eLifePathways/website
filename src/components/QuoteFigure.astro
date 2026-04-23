@@ -32,7 +32,7 @@ const { quote, headshotSrc, headshotAlt, name, jobTitle, logoSrc, logoAlt } =
 <style>
   .figure {
     background-color: var(--color-cream-quote);
-    flex: 1 0 26.5625rem;
+    flex-shrink: 1;
     padding: 2.25rem;
     display: flex;
     flex-direction: column;
@@ -43,6 +43,8 @@ const { quote, headshotSrc, headshotAlt, name, jobTitle, logoSrc, logoAlt } =
   .attribution {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
 
   .biography {
