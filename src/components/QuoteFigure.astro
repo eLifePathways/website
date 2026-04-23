@@ -9,7 +9,8 @@ interface Props {
   logoAlt: string;
 }
 
-const { quote, headshotSrc, headshotAlt, name, jobTitle, logoSrc, logoAlt } = Astro.props;
+const { quote, headshotSrc, headshotAlt, name, jobTitle, logoSrc, logoAlt } =
+  Astro.props;
 ---
 
 <figure class="figure">
@@ -23,10 +24,6 @@ const { quote, headshotSrc, headshotAlt, name, jobTitle, logoSrc, logoAlt } = As
 </figure>
 
 <style>
-  .figure {
-    min-width: 485px;
-    margin: 0px;
-  }
   .quote-headshot {
     width: 80px;
     height: 80px;
