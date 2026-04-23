@@ -72,7 +72,7 @@ import QuoteFigure from "../components/QuoteFigure.astro";
         </div>
       </section>
 
-      <section class="quotes-section hidden">
+      <section class="quotes-section">
         <div class="centered-content-wide wrapper">
           <QuoteFigure
             quote="The change we seek in preprint review and scholarly communication cannot be driven by any one person or organization—it must emerge from communities working together. eLife Pathways helps build the infrastructure to strengthen those connections and enable the co-evolution of tools and communities."
@@ -98,16 +98,6 @@ import QuoteFigure from "../components/QuoteFigure.astro";
 
     <Footer />
     <MobileNav />
-
-    <script>
-      // Feature flag to only display the quotes section when the query string contains 'quotes'.
-      (() => {
-        "use strict";
-        if (window.location.search.includes("quotes")) {
-          document.querySelector(".quotes-section").classList.remove("hidden");
-        }
-      })();
-    </script>
   </body>
 </html>
 
@@ -118,10 +108,6 @@ import QuoteFigure from "../components/QuoteFigure.astro";
 
   .homepage-content-section h2 i {
     color: var(--color-pink);
-  }
-
-  .hidden {
-    display: none;
   }
 
   .wrapper {
