@@ -102,4 +102,5 @@
 
 .wrapper figure {
   flex: 1 0 22.5rem;
+  background-color: var(--color-cream-quote);
 }
