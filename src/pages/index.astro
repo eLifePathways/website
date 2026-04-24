@@ -72,42 +72,30 @@ import QuoteFigure from "../components/QuoteFigure.astro";
         </div>
       </section>
 
-      <section class="quotes-section hidden">
-        <div class="centered-content-wide wrapper">
-          <QuoteFigure
-            quote="The change we seek in preprint review and scholarly communication cannot be driven by any one person or organization—it must emerge from communities working together. eLife Pathways helps build the infrastructure to strengthen those connections and enable the co-evolution of tools and communities."
-            headshotSrc="images/daniela-saderi.png"
-            headshotAlt="Headshot of Daniela Saderi"
-            name="Daniela Saderi"
-            jobTitle="Executive Director"
-            logoSrc="images/prereview-logo.svg"
-            logoAlt="PreReview"
-          />
-          <QuoteFigure
-            quote="Advancing a preprint-first culture requires a shared commitment. eLife Pathways helps to build a trustworthy and interconnected ecosystem that prioritises transparency, connection, and mutual trust."
-            headshotSrc="images/tracy-teal.png"
-            headshotAlt="Headshot of Tracy Teal"
-            name="Tracy Teal"
-            jobTitle="CEO"
-            logoSrc="images/openrxiv-logo.png"
-            logoAlt="OpenRxiv"
-          />
-        </div>
+      <section class="centered-content-wide wrapper">
+        <QuoteFigure
+          quote="The change we seek in preprint review and scholarly communication cannot be driven by any one person or organization—it must emerge from communities working together. eLife Pathways helps build the infrastructure to strengthen those connections and enable the co-evolution of tools and communities."
+          headshotSrc="images/daniela-saderi.png"
+          headshotAlt="Headshot of Daniela Saderi"
+          name="Daniela Saderi"
+          jobTitle="Executive Director"
+          logoSrc="images/prereview-logo.svg"
+          logoAlt="PreReview"
+        />
+        <QuoteFigure
+          quote="Advancing a preprint-first culture requires a shared commitment. eLife Pathways helps to build a trustworthy and interconnected ecosystem that prioritises transparency, connection, and mutual trust."
+          headshotSrc="images/tracy-teal.png"
+          headshotAlt="Headshot of Tracy Teal"
+          name="Tracy Teal"
+          jobTitle="CEO"
+          logoSrc="images/openrxiv-logo.png"
+          logoAlt="OpenRxiv"
+        />
       </section>
     </main>
 
     <Footer />
     <MobileNav />
-
-    <script>
-      // Feature flag to only display the quotes section when the query string contains 'quotes'.
-      (() => {
-        "use strict";
-        if (window.location.search.includes("quotes")) {
-          document.querySelector(".quotes-section").classList.remove("hidden");
-        }
-      })();
-    </script>
   </body>
 </html>
 
@@ -118,10 +106,6 @@ import QuoteFigure from "../components/QuoteFigure.astro";
 
   .homepage-content-section h2 i {
     color: var(--color-pink);
-  }
-
-  .hidden {
-    display: none;
   }
 
   .wrapper {
