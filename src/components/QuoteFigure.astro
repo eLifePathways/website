@@ -23,7 +23,11 @@ const {
 ---
 
 <figure class={isPartnershipsPage ? "figure partner-quote" : "figure"}>
-  <blockquote><p>{quote}</p></blockquote>
+  {
+    isPartnershipsPage
+        ? (<blockquote><p>{quote}</p></blockquote>)
+        : (<blockquote><p>{quote}</p></blockquote>)
+  }
   <figcaption class="attribution">
     <div class="biography">
       <img class="quote-headshot" src={headshotSrc} alt={headshotAlt} />
