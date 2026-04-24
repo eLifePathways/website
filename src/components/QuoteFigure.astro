@@ -37,7 +37,7 @@ const { quote, headshotSrc, headshotAlt, name, jobTitle, logoSrc, logoAlt } =
   .figure {
     background-color: var(--color-cream-quote);
     flex: 1 1 30.3125rem;
-    padding: 2.25rem;
+    padding: clamp(1rem, calc(-0.176rem + 5.882vw), 2.25rem);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
