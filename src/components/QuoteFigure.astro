@@ -25,7 +25,7 @@ const {
 <figure class={isPartnershipsPage ? "figure partner-quote" : "figure"}>
   {
     isPartnershipsPage
-        ? (<blockquote><p><span class="quotation-mark qm-open">"</span>{quote}<span class="quotation-mark qm-closed">&nbsp;&nbsp;&nbsp;"</span></p></blockquote>)
+        ? (<blockquote><p><span class="quotation-mark qm-open">"</span>{quote}<span class="quotation-mark qm-closed">&nbsp;&nbsp;"</span></p></blockquote>)
         : (<blockquote><p>{quote}</p></blockquote>)
   }
   <figcaption class="attribution">
@@ -60,12 +60,24 @@ const {
 
   .figure.partner-quote blockquote p {
     font-weight: var(--font-weight-semibold);
+    position: relative;
   }
 
   .quotation-mark {
     font-size: 1.875rem;
     color: var(--color-brand-elife-pink);
     font-style: italic;
+    display: inline;
+    position: absolute;
+  }
+
+  .qm-open {
+    top: -0.25rem;
+    left: -1.25rem;
+  }
+
+  .qm-closed {
+    transform: translateY(-5px);
   }
 
   .attribution {
