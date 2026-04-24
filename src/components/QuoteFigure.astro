@@ -5,8 +5,8 @@ interface Props {
   headshotAlt: string;
   name: string;
   jobTitle: string;
-  logoSrc: string;
-  logoAlt: string;
+  logoSrc?: string;
+  logoAlt?: string;
 }
 
 const { quote, headshotSrc, headshotAlt, name, jobTitle, logoSrc, logoAlt } =
@@ -23,9 +23,13 @@ const { quote, headshotSrc, headshotAlt, name, jobTitle, logoSrc, logoAlt } =
         <div>{jobTitle}</div>
       </div>
     </div>
-    <div class="logo">
-      <img src={logoSrc} alt={logoAlt} />
-    </div>
+    {
+      logoSrc ? (
+        <div class="logo">
+          <img src={logoSrc} alt={logoAlt} />
+        </div>
+      ) : null
+    }
   </figcaption>
 </figure>
 
