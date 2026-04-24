@@ -5,15 +5,24 @@ interface Props {
   headshotAlt: string;
   name: string;
   jobTitle: string;
+  isPartnershipsPage?: bool;
   logoSrc?: string;
   logoAlt?: string;
 }
 
-const { quote, headshotSrc, headshotAlt, name, jobTitle, logoSrc, logoAlt } =
-  Astro.props;
+const {
+  quote,
+  headshotSrc,
+  headshotAlt,
+  name,
+  jobTitle,
+  isPartnershipsPage,
+  logoSrc,
+  logoAlt,
+} = Astro.props;
 ---
 
-<figure class="figure">
+<figure class={isPartnershipsPage ? "figure partner-quote" : "figure"}>
   <blockquote><p>{quote}</p></blockquote>
   <figcaption class="attribution">
     <div class="biography">
