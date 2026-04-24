@@ -24,9 +24,19 @@ const {
 
 <figure class={isPartnershipsPage ? "figure partner-quote" : "figure"}>
   {
-    isPartnershipsPage
-        ? (<blockquote><p><span class="quotation-mark qm-open">"</span>{quote}<span class="quotation-mark qm-closed">&nbsp;&nbsp;"</span></p></blockquote>)
-        : (<blockquote><p>{quote}</p></blockquote>)
+    isPartnershipsPage ? (
+      <blockquote>
+        <p>
+          <span class="quotation-mark qm-open">"</span>
+          {quote}
+          <span class="quotation-mark qm-closed">&nbsp;&nbsp;"</span>
+        </p>
+      </blockquote>
+    ) : (
+      <blockquote>
+        <p>{quote}</p>
+      </blockquote>
+    )
   }
   <figcaption class="attribution">
     <div class="biography">
