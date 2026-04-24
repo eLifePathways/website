@@ -66,6 +66,9 @@ const {
     justify-content: space-between;
     gap: 2.25rem;
     border-radius: 10px;
+
+    container-type: inline-size;
+    container-name: quote;
   }
 
   .figure.partner-quote blockquote p {
@@ -79,6 +82,12 @@ const {
     font-style: italic;
     display: inline;
     position: absolute;
+  }
+
+  @container quote (width < 30.3125rem) {
+    .quotation-mark {
+      text-indent: -1000px;
+    }
   }
 
   .qm-open {
