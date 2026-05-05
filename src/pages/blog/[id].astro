@@ -1,0 +1,36 @@
+---
+import "../../styles/main.css";
+import { getCollection, render } from "astro:content";
+import ContentSection from "../../components/ContentSection.astro";
+import Footer from "../../components/Footer.astro";
+import MobileNav from "../../components/MobileNav.astro";
+import PageHead from "../../components/PageHead.astro";
+import PageHero from "../../components/PageHero.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({ params: { id: post.id } }));
+}
+
+const { id } = Astro.params;
+const posts = await getCollection("blog");
+const post = posts.find((p) => p.id === id)!;
+const { Content } = await render(post);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <PageHead title={`${post.data.title} — eLife Pathways`} />
+  </head>
+  <body>
+    <main>
+      <PageHero pageTitle="Blog" pageHeading={post.data.title} />
+      <ContentSection>
+        <Content />
+      </ContentSection>
+    </main>
+    <Footer />
+    <MobileNav />
+  </body>
+</html>
