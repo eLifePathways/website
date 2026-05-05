@@ -35,6 +35,7 @@ const { pageTitle, pageHeading, backNavTarget } = Astro.props;
     line-height: 1.05;
     letter-spacing: -0.02rem;
     color: var(--color-dark-purple);
+    margin-block-end: var(--space-m-xl);
   }
 
   .page-hero h1::after {
@@ -96,7 +97,6 @@ const { pageTitle, pageHeading, backNavTarget } = Astro.props;
   }
   @media (min-width: 75rem /* 1200px */) {
     .hero-inner h1 {
-      margin-bottom: var(--space-md);
       line-height: calc(78 / 71);
       font-size: 4.4375rem; /* 71px */
     }
