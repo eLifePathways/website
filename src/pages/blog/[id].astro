@@ -35,7 +35,7 @@ const { Content } = await render(post);
         {post.data.image && <img src={post.data.image} />}
       </PageHero>
       <ContentSection>
-        <div class="markdown-content">
+        <div class="markdown-content flow">
           <time
             class="blog-card__date"
             datetime={post.data.date.toISOString().slice(0, 10)}
@@ -56,7 +56,7 @@ const { Content } = await render(post);
     blockquote {
       border-inline-start: 6px solid var(--color-brand-elife-pink);
       padding-inline-start: var(--space-md);
-      margin-block: var(--space-lg);
+      margin-block: var(--space-xl);
     }
     blockquote :last-child {
       font-weight: var(--font-weight-semibold);
@@ -64,6 +64,7 @@ const { Content } = await render(post);
     time {
       font-size: var(--font-size-sm);
     }
+    --flow-space: var(--space-lg);
   }
 
   .summary {
