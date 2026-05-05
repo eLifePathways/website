@@ -1,9 +1,12 @@
 ---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
 import { formatDate } from "./formatDate";
+
 interface Props {
   title: string;
   date: Date;
-  image?: string;
+  image?: ImageMetadata;
   href: string;
 }
 
@@ -13,7 +16,7 @@ const { title, date, image, href } = Astro.props;
 <li class="blog-card">
   <a class="blog-card__link" href={href}>
     <div class="blog-card__image">
-      {image && <img src={image} alt="" />}
+      {image && <Image src={image} alt="" widths={[320, 640]} sizes="(min-width: 40rem) 320px, 100vw" />}
     </div>
     <div class="blog-card__body">
       <h3 class="blog-card__title">{title}</h3>

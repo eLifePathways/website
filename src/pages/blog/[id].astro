@@ -1,5 +1,6 @@
 ---
 import "../../styles/main.css";
+import { Image } from "astro:assets";
 import { getCollection, render } from "astro:content";
 import ContentSection from "../../components/ContentSection.astro";
 import Footer from "../../components/Footer.astro";
@@ -32,7 +33,7 @@ const { Content } = await render(post);
         pageHeading={post.data.title}
       >
         {post.data.summary && <p class="summary">{post.data.summary}</p>}
-        {post.data.image && <img src={post.data.image} />}
+        {post.data.image && <Image src={post.data.image} alt="" widths={[640, 960, 1280]} sizes="(min-width: 60rem) 960px, 100vw" />}
       </PageHero>
       <ContentSection>
         <div class="markdown-content flow">
