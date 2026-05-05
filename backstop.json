@@ -38,6 +38,18 @@
       "misMatchThreshold": 0,
       "delay": 500,
       "viewports": [{ "label": "mobile", "width": 320, "height": 812 }]
+    },
+    {
+      "label": "Blog listing",
+      "url": "http://host.docker.internal:4321/blog",
+      "misMatchThreshold": 0,
+      "delay": 500
+    },
+    {
+      "label": "Blog page",
+      "url": "http://host.docker.internal:4321/blog/post-07-05-25/",
+      "misMatchThreshold": 0,
+      "delay": 500
     }
   ],
   "paths": {
