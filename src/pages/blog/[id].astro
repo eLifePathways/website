@@ -6,6 +6,7 @@ import Footer from "../../components/Footer.astro";
 import MobileNav from "../../components/MobileNav.astro";
 import PageHead from "../../components/PageHead.astro";
 import PageHero from "../../components/PageHero.astro";
+import { formatDate } from "../../components/formatDate";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -35,6 +36,12 @@ const { Content } = await render(post);
       </PageHero>
       <ContentSection>
         <div class="markdown-content">
+          <time
+            class="blog-card__date"
+            datetime={post.data.date.toISOString().slice(0, 10)}
+          >
+            {formatDate(post.data.date)}
+          </time>
           <Content />
         </div>
       </ContentSection>
@@ -52,6 +59,9 @@ const { Content } = await render(post);
     }
     blockquote :last-child {
       font-weight: var(--font-weight-semibold);
+    }
+    time {
+      font-size: var(--font-size-sm);
     }
   }
 
