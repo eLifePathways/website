@@ -20,7 +20,6 @@ const { pageTitle, pageHeading } = Astro.props;
 
 <style>
   .page-hero {
-    min-height: var(--hero-height-default);
     padding-top: var(--space-sm);
     background-color: var(--color-cream);
     color: var(--color-peach-text);
@@ -43,28 +42,24 @@ const { pageTitle, pageHeading } = Astro.props;
 
   @media (min-width: 30rem) {
     .page-hero {
-      min-height: var(--hero-height-sm);
       padding-top: var(--space-md);
     }
   }
 
   @media (min-width: 40rem) {
     .page-hero {
-      min-height: var(--hero-height-md);
       padding-top: var(--space-lg);
     }
   }
 
   @media (min-width: 50rem) {
     .page-hero {
-      min-height: var(--hero-height-lg);
       padding-top: var(--space-lg);
     }
   }
 
   @media (min-width: 75rem) {
     .page-hero {
-      min-height: var(--hero-height-xl);
       padding-top: var(--space-xl);
     }
   }
