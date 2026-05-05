@@ -30,7 +30,9 @@ const { Content } = await render(post);
         {post.data.image && <img src={post.data.image} />}
       </PageHero>
       <ContentSection>
-        <Content />
+        <div class="markdown-content">
+          <Content />
+        </div>
       </ContentSection>
     </main>
     <Footer />
@@ -39,6 +41,16 @@ const { Content } = await render(post);
 </html>
 
 <style>
+  .markdown-content {
+    blockquote {
+      border-inline-start: 6px solid var(--color-brand-elife-pink);
+      padding-inline-start: var(--space-md);
+    }
+    blockquote :last-child {
+      font-weight: var(--font-weight-semibold);
+    }
+  }
+
   .summary {
     font-weight: var(--font-weight-semibold);
     color: var(--color-dark-purple);
