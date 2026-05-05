@@ -4,15 +4,18 @@ import SiteNav from "./SiteNav.astro";
 interface Props {
   pageTitle: string;
   pageHeading: string;
+  backNavTarget?: string;
 }
 
-const { pageTitle, pageHeading } = Astro.props;
+const { pageTitle, pageHeading, backNavTarget } = Astro.props;
 ---
 
 <header class="page-hero" id="site-header">
   <SiteNav />
   <div class="centered-content flow hero-inner">
-    <p class="section-label">{pageTitle}</p>
+    <p class="section-label">
+      {backNavTarget ? <a href={backNavTarget}>&lt; {pageTitle}</a> : pageTitle}
+    </p>
     <h1 id="main-content">{pageHeading}</h1>
     <slot />
   </div>
