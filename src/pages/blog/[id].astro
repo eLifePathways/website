@@ -26,6 +26,7 @@ const { Content } = await render(post);
   <body>
     <main>
       <PageHero pageTitle="Blog" pageHeading={post.data.title} />
+      {post.data.image && <img src={post.data.image} />}
       <ContentSection>
         <Content />
       </ContentSection>
