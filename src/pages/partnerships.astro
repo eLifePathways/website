@@ -6,12 +6,14 @@ import PageHead from "../components/PageHead.astro";
 import PageHero from "../components/PageHero.astro";
 import PartnerSection from "../components/PartnerSection.astro";
 import QuoteFigure from "../components/QuoteFigure.astro";
+import MetaTags from "../components/MetaTags.astro";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <PageHead title="Partnerships — eLife Pathways" />
+    <MetaTags title="eLife Pathways partnerships page" url={Astro.url.href} />
   </head>
   <body>
     <main>
