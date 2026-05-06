@@ -91,9 +91,20 @@ import MetaTags from "../components/MetaTags.astro";
           the scholarly community.
         </p>
       </ContentSection>
+
+      <div data-collab class="hidden"></div>
     </main>
     <Footer />
     <MobileNav />
+    <script>
+      // Feature flag to only display the Partnerships and Collaborations section when the query string contains 'collab'.
+      (() => {
+        "use strict";
+        if (window.location.search.includes("collab")) {
+          document.querySelector("[data-collab]").classList.remove("hidden");
+        }
+      })();
+    </script>
   </body>
 </html>
 
@@ -103,5 +114,9 @@ import MetaTags from "../components/MetaTags.astro";
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     line-height: 1.5;
+  }
+
+  .hidden {
+    display: none;
   }
 </style>
