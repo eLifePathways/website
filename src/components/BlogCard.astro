@@ -16,7 +16,7 @@ const { title, date, image, href } = Astro.props;
       {image && <img src={image} alt="" />}
     </div>
     <div class="blog-card__body">
-      <h3 class="blog-card__title">{title}</h3>
+      <h2 class="blog-card__title">{title}</h2>
       <time class="blog-card__date" datetime={date.toISOString().slice(0, 10)}>
         {formatDate(date)}
       </time>
