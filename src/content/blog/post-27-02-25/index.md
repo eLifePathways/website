@@ -1,8 +1,8 @@
 ---
 title: "eLife winner of OpenAthens UX Award 2025"
 date: 2025-02-27
-image: /images/ux-award-16-10.png
 imageAlt: "Winner UX Award 2025 OpenAthens Part of Jisc"
+image: ./ux-award-16-10.png
 ---
 
 eLife announced as OpenAthens UX Award winners for its user-driven approach to Reviewed Preprints.
