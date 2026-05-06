@@ -23,6 +23,43 @@ const { Content } = await render(post);
 <html lang="en">
   <head>
     <PageHead title={`${post.data.title} — eLife Pathways`} />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={post.data.title} />
+    <meta property="og:url" content={Astro.url.href} />
+    {
+      post.data.summary && (
+        <meta property="og:description" content={post.data.summary} />
+      )
+    }
+    <meta
+      property="article:published_time"
+      content={post.data.date.toISOString()}
+    />
+    <meta property="og:site_name" content="eLife Pathways" />
+    {
+      post.data.image && (
+        <meta
+          property="og:image"
+          content={new URL(post.data.image, Astro.url.origin).href}
+        />
+      )
+    }
+    {
+      post.data.imageAlt && (
+        <meta property="og:image:alt" content={post.data.imageAlt} />
+      )
+    }
+    <meta property="og:locale" content="en_GB" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:text:title" content={post.data.title} />
+    {
+      post.data.image && (
+        <meta
+          name="twitter:image"
+          content={new URL(post.data.image, Astro.url.origin).href}
+        />
+      )
+    }
   </head>
   <body>
     <main>
