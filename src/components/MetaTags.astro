@@ -1,0 +1,26 @@
+---
+interface Props {
+  title: string;
+  url: string;
+  origin: string;
+  date: Date;
+  summary?: string;
+  image?: string;
+  imageAlt?: string;
+}
+
+const { title, url, origin, date, summary, image, imageAlt } = Astro.props;
+---
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content={title} />
+<meta property="og:url" content={url} />
+{summary && <meta property="og:description" content={summary} />}
+<meta property="article:published_time" content={date.toISOString()} />
+<meta property="og:site_name" content="eLife Pathways" />
+{image && <meta property="og:image" content={new URL(image, origin).href} />}
+{imageAlt && <meta property="og:image:alt" content={imageAlt} />}
+<meta property="og:locale" content="en_GB" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:text:title" content={title} />
+{image && <meta name="twitter:image" content={new URL(image, origin).href} />}
