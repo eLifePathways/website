@@ -5,12 +5,14 @@ import LandingHero from "../components/LandingHero.astro";
 import MobileNav from "../components/MobileNav.astro";
 import PageHead from "../components/PageHead.astro";
 import QuoteFigure from "../components/QuoteFigure.astro";
+import MetaTags from "../components/MetaTags.astro";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <PageHead title="eLife Pathways" />
+    <MetaTags title="eLife Pathways home page" url={Astro.url.href} />
   </head>
   <body>
     <main>

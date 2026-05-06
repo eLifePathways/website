@@ -1,0 +1,25 @@
+---
+interface Props {
+  title: string;
+  url: string;
+}
+
+const { title, url } = Astro.props;
+---
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:url" content={url} />
+<meta property="og:site_name" content="eLife Pathways" />
+<meta
+  property="og:image"
+  content={new URL("images/pathways-logo-meta-tag.png", Astro.url.origin).href}
+/>
+<meta property="og:image:alt" content="" />
+<meta property="og:locale" content="en_GB" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:text:title" content={title} />
+<meta
+  name="twitter:image"
+  content={new URL("images/pathways-logo-meta-tag.png", Astro.url.origin).href}
+/>
