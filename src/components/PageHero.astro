@@ -14,7 +14,15 @@ const { pageTitle, pageHeading, backNavTarget } = Astro.props;
   <SiteNav />
   <div class="centered-content flow hero-inner">
     <p class="section-label">
-      {backNavTarget ? <a href={backNavTarget}>&lt; {pageTitle}</a> : pageTitle}
+      {
+        backNavTarget ? (
+          <a href={backNavTarget}>
+            <span aria-hidden="true">&lt;</span> {pageTitle}
+          </a>
+        ) : (
+          pageTitle
+        )
+      }
     </p>
     <h1 id="main-content">{pageHeading}</h1>
     <slot />
