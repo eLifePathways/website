@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 36" fill="none">
+  <!-- 3D hexagon icon -->
+  <g transform="translate(2,2)">
+    <!-- top face -->
+    <polygon points="16,1 28,8 16,15 4,8" fill="#5b9bd5"/>
+    <!-- left face -->
+    <polygon points="4,8 16,15 16,29 4,22" fill="#2e74b5"/>
+    <!-- right face -->
+    <polygon points="28,8 16,15 16,29 28,22" fill="#4472c4"/>
+  </g>
+  <text x="38" y="25" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#1a1a1a" letter-spacing="1">LIBERO</text>
+</svg>

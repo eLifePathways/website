@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 36" fill="none">
+  <!-- n with dot above -->
+  <text x="0" y="26" font-family="Poppins, sans-serif" font-size="22" font-weight="700" fill="#1a1a1a">n</text>
+  <circle cx="10" cy="6" r="2.5" fill="#1a1a1a"/>
+  <text x="18" y="26" font-family="Poppins, sans-serif" font-size="22" font-weight="700" fill="#1a1a1a">otify</text>
+  <text x="82" y="14" font-family="Poppins, sans-serif" font-size="9" font-weight="600" fill="#666">COAR</text>
+</svg>

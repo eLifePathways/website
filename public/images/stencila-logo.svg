@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 36" fill="none">
+  <!-- Concentric circle icon -->
+  <circle cx="16" cy="18" r="13" fill="#e8521a" opacity="0.15"/>
+  <circle cx="16" cy="18" r="9" fill="#e8521a" opacity="0.3"/>
+  <circle cx="16" cy="18" r="5" fill="#e8521a"/>
+  <text x="36" y="24" font-family="Poppins, sans-serif" font-size="18" font-weight="600" fill="#1a1a1a">Stencila</text>
+</svg>
