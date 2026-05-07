@@ -221,17 +221,11 @@ import ProjectCard from "../components/ProjectCard.astro";
 
   .project-cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
     gap: var(--space-lg);
     list-style: none;
     margin: 0;
     padding: 0;
     margin-block-start: var(--space-xl);
-  }
-
-  @media (max-width: 36rem) {
-    .project-cards {
-      grid-template-columns: 1fr;
-    }
   }
 </style>
