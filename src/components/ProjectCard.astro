@@ -12,10 +12,10 @@ const { name, description, aboutUrl, githubUrl, logoSrc, logoAlt } =
   Astro.props;
 ---
 
-<div class="project-card">
-  <div class="project-card__logo">
+<article class="project-card">
+  <h3>
     <img src={logoSrc} alt={logoAlt ?? name} />
-  </div>
+  </h3>
   <p class="project-card__description">{description}</p>
   <div class="project-card__links">
     <a class="project-card__link" href={aboutUrl} rel="noopener noreferrer">
@@ -54,7 +54,7 @@ const { name, description, aboutUrl, githubUrl, logoSrc, logoAlt } =
       )
     }
   </div>
-</div>
+</article>
 
 <style>
   .project-card {
@@ -68,11 +68,11 @@ const { name, description, aboutUrl, githubUrl, logoSrc, logoAlt } =
     height: 100%;
   }
 
-  .project-card__logo {
+  h3 {
     height: 2rem;
   }
 
-  .project-card__logo img {
+  h3 img {
     max-height: 100%;
     max-width: 10rem;
     object-fit: contain;
