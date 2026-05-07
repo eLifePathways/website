@@ -5,16 +5,14 @@ interface Props {
   aboutUrl: string;
   githubUrl?: string;
   logoSrc: string;
-  logoAlt?: string;
 }
 
-const { name, description, aboutUrl, githubUrl, logoSrc, logoAlt } =
-  Astro.props;
+const { name, description, aboutUrl, githubUrl, logoSrc } = Astro.props;
 ---
 
 <article class="project-card">
   <h3>
-    <img src={logoSrc} alt={logoAlt ?? name} />
+    <img src={logoSrc} alt={name} />
   </h3>
   <p class="project-card__description">{description}</p>
   <div class="project-card__links">
