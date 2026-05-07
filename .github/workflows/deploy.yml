@@ -33,16 +33,27 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+
       - uses: pnpm/action-setup@v4
         with:
           version: 10
+
       - uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: pnpm
       - run: make build
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/
+
       - id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Archive Backstop screenshots
+        if: failure()
+        uses: actions/upload-artifact@v6
+        with:
+          name: backstop_data
+          path: backstop_data
