@@ -31,4 +31,7 @@
   --hero-height-md: 40rem;
   --hero-height-lg: 47.5rem;
   --hero-height-xl: 55rem;
+
+  /* Misc */
+  --card-border-radius: 6px;
 }
