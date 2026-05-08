@@ -1,4 +1,4 @@
-.PHONY: dev build preview lint lint-fix prettier check vrt-reference vrt-test vrt-approve vrt-report
+.PHONY: dev build preview lint lint-fix prettier check vrt-reference vrt-test vrt-report
 
 VRT_IMAGE := elifepathways-vrt
 
@@ -53,15 +53,6 @@ vrt-test: node_modules .vrt-image
 	$(VRT_RUN); STATUS=$$?; \
 	kill $$PREVIEW_PID 2>/dev/null; \
 	exit $$STATUS
-
-vrt-approve:
-	@find visual-regression/test-results -name '*-actual.png' | while IFS= read -r f; do \
-	  dir=$$(basename "$$(dirname "$$f")"); \
-	  name=$$(basename "$$f" -actual.png); \
-	  project=$$(echo "$$dir" | rev | cut -d- -f2 | rev); \
-	  dest="visual-regression/snapshots/$${name}-$${project}.png"; \
-	  cp "$$f" "$$dest" && echo "Approved: $$dest"; \
-	done
 
 vrt-report: node_modules
 	npx playwright show-report visual-regression/html_report
