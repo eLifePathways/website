@@ -14,6 +14,6 @@ for (const spec of PAGES) {
   test(spec.name, async ({ page }, testInfo) => {
     if (spec.projects) test.skip(!spec.projects.includes(testInfo.project.name));
     await page.goto(spec.path);
-    await expect(page).toHaveScreenshot(`${spec.name}.png`);
+    await expect(page).toHaveScreenshot(`${spec.name}.png`, { fullPage: true });
   });
 }
