@@ -1,4 +1,5 @@
 import { defineConfig } from "astro/config";
+import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: "https://elifepathways.org",
@@ -9,4 +10,5 @@ export default defineConfig({
       allowedHosts: ["host.docker.internal"],
     },
   },
+  integrations: [sitemap()],
 });
