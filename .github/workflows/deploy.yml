@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 24
           cache: pnpm
-      - run: make backstop-test
+      - run: make vrt-test
 
   deploy:
     needs: visual-regression
@@ -51,9 +51,9 @@ jobs:
       - id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Archive Backstop screenshots
+      - name: Archive visual regression screenshots
         if: failure()
         uses: actions/upload-artifact@v6
         with:
-          name: backstop_data
-          path: backstop_data
+          name: vrt_data
+          path: vrt_data
