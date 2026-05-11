@@ -10,12 +10,26 @@ import PageHero from "../../components/PageHero.astro";
 
 const posts = await getCollection("blog");
 posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Blog — eLife Pathways",
+  "url": Astro.url.href,
+  "description": "News and updates from eLife Pathways.",
+  "about": {
+    "@type": "Organization",
+    "name": "eLife Pathways",
+    "url": Astro.url.origin,
+  },
+};
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <PageHead title="Blog — eLife Pathways" />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
   <body>
     <main>

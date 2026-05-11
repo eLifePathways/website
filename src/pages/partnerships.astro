@@ -7,6 +7,19 @@ import PageHero from "../components/PageHero.astro";
 import PartnerSection from "../components/PartnerSection.astro";
 import QuoteFigure from "../components/QuoteFigure.astro";
 import MetaTags from "../components/MetaTags.astro";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Partnerships — eLife Pathways",
+  "url": Astro.url.href,
+  "description": "eLife Pathways advances open science through collaboration, co-developing open-source infrastructure with researchers, technologists, and global partners.",
+  "about": {
+    "@type": "Organization",
+    "name": "eLife Pathways",
+    "url": Astro.url.origin,
+  },
+};
 ---
 
 <!doctype html>
@@ -14,6 +27,7 @@ import MetaTags from "../components/MetaTags.astro";
   <head>
     <PageHead title="Partnerships — eLife Pathways" />
     <MetaTags title="eLife Pathways partnerships page" url={Astro.url.href} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
   <body>
     <main>
