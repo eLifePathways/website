@@ -13,9 +13,10 @@ posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "WebPage",
+  "@type": "CollectionPage",
   name: "Blog — eLife Pathways",
   url: Astro.url.href,
+  dateModified: posts[0]?.data.date.toISOString(),
   description: "News and updates from eLife Pathways.",
   about: {
     "@type": "Organization",
