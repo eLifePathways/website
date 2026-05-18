@@ -4,9 +4,12 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <meta charset="UTF-8" />
+<link rel="canonical" href={canonicalURL} />
 <link rel="sitemap" href="/sitemap-index.xml" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <base href="/" />
