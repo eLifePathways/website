@@ -1,5 +1,6 @@
 ---
 import "../../styles/main.css";
+import { execSync } from "node:child_process";
 import { Image } from "astro:assets";
 import { getCollection, render } from "astro:content";
 import ContentSection from "../../components/ContentSection.astro";
@@ -20,6 +21,15 @@ const posts = await getCollection("blog");
 const post = posts.find((p) => p.id === id)!;
 const { Content } = await render(post);
 
+let dateModified = post.data.date.toISOString();
+try {
+  const result = execSync(
+    `git log -1 --format="%aI" -- "src/content/blog/${post.id}"`,
+    { encoding: "utf-8" }
+  ).trim();
+  if (result) dateModified = result;
+} catch {}
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -30,6 +40,7 @@ const jsonLd = {
   ...(post.data.image && {
     image: new URL(post.data.image.src, Astro.url.origin).href,
   }),
+  dateModified,
   publisher: {
     "@type": "Organization",
     name: "eLife Pathways",
