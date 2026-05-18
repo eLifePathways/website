@@ -11,13 +11,14 @@ import ProjectCard from "../components/ProjectCard.astro";
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Solutions — eLife Pathways",
-  "url": Astro.url.href,
-  "description": "eLife Pathways builds interoperable open-source infrastructure for scholarly communication, offering solutions for open publishing, preprint sharing, peer review, and scholarly metadata.",
-  "about": {
+  name: "Solutions — eLife Pathways",
+  url: Astro.url.href,
+  description:
+    "eLife Pathways builds interoperable open-source infrastructure for scholarly communication, offering solutions for open publishing, preprint sharing, peer review, and scholarly metadata.",
+  about: {
     "@type": "Organization",
-    "name": "eLife Pathways",
-    "url": Astro.url.origin,
+    name: "eLife Pathways",
+    url: Astro.url.origin,
   },
 };
 ---
@@ -27,7 +28,11 @@ const jsonLd = {
   <head>
     <PageHead title="Solutions — eLife Pathways" />
     <MetaTags title="eLife Pathways solutions page" url={Astro.url.href} />
-    <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(jsonLd)}
+    />
   </head>
   <body>
     <main>

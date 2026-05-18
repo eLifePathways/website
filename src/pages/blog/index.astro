@@ -14,13 +14,13 @@ posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Blog — eLife Pathways",
-  "url": Astro.url.href,
-  "description": "News and updates from eLife Pathways.",
-  "about": {
+  name: "Blog — eLife Pathways",
+  url: Astro.url.href,
+  description: "News and updates from eLife Pathways.",
+  about: {
     "@type": "Organization",
-    "name": "eLife Pathways",
-    "url": Astro.url.origin,
+    name: "eLife Pathways",
+    url: Astro.url.origin,
   },
 };
 ---
@@ -29,7 +29,11 @@ const jsonLd = {
 <html lang="en">
   <head>
     <PageHead title="Blog — eLife Pathways" />
-    <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(jsonLd)}
+    />
   </head>
   <body>
     <main>

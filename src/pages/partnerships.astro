@@ -11,13 +11,14 @@ import MetaTags from "../components/MetaTags.astro";
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Partnerships — eLife Pathways",
-  "url": Astro.url.href,
-  "description": "eLife Pathways advances open science through collaboration, co-developing open-source infrastructure with researchers, technologists, and global partners.",
-  "about": {
+  name: "Partnerships — eLife Pathways",
+  url: Astro.url.href,
+  description:
+    "eLife Pathways advances open science through collaboration, co-developing open-source infrastructure with researchers, technologists, and global partners.",
+  about: {
     "@type": "Organization",
-    "name": "eLife Pathways",
-    "url": Astro.url.origin,
+    name: "eLife Pathways",
+    url: Astro.url.origin,
   },
 };
 ---
@@ -27,7 +28,11 @@ const jsonLd = {
   <head>
     <PageHead title="Partnerships — eLife Pathways" />
     <MetaTags title="eLife Pathways partnerships page" url={Astro.url.href} />
-    <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(jsonLd)}
+    />
   </head>
   <body>
     <main>

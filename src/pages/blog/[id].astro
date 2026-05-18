@@ -23,15 +23,17 @@ const { Content } = await render(post);
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": post.data.title,
-  "url": Astro.url.href,
-  "datePublished": post.data.date.toISOString(),
-  ...(post.data.summary && { "description": post.data.summary }),
-  ...(post.data.image && { "image": new URL(post.data.image.src, Astro.url.origin).href }),
-  "publisher": {
+  headline: post.data.title,
+  url: Astro.url.href,
+  datePublished: post.data.date.toISOString(),
+  ...(post.data.summary && { description: post.data.summary }),
+  ...(post.data.image && {
+    image: new URL(post.data.image.src, Astro.url.origin).href,
+  }),
+  publisher: {
     "@type": "Organization",
-    "name": "eLife Pathways",
-    "url": Astro.url.origin,
+    name: "eLife Pathways",
+    url: Astro.url.origin,
   },
 };
 ---
@@ -40,7 +42,11 @@ const jsonLd = {
 <html lang="en">
   <head>
     <PageHead title={`${post.data.title} — eLife Pathways`} />
-    <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(jsonLd)}
+    />
     <MetaTags
       title={post.data.title}
       url={Astro.url.href}
