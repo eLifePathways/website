@@ -25,7 +25,7 @@ let dateModified = post.data.date.toISOString();
 try {
   const result = execSync(
     `git log -1 --format="%aI" -- "src/content/blog/${post.id}"`,
-    { encoding: "utf-8" }
+    { encoding: "utf-8" },
   ).trim();
   if (result) dateModified = result;
 } catch {}
