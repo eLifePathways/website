@@ -52,6 +52,8 @@ vrt-test: node_modules .vrt-image
 	until curl -sf http://localhost:4321/ > /dev/null; do sleep 1; done; \
 	$(VRT_RUN); STATUS=$$?; \
 	kill $$PREVIEW_PID 2>/dev/null; \
+	lsof -t -i TCP:9323 -s TCP:LISTEN | xargs kill 2>/dev/null || true; \
+	npx playwright show-report visual-regression/html_report; \
 	exit $$STATUS
 
 vrt-report: node_modules
