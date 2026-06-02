@@ -15,20 +15,38 @@
             data-variant="pink"
             href="mailto:technology@elifesciences.org"
             aria-label="Email (opens email client to send to technology@elifesciences.org)"
-            >Email</a
           >
+            <img
+              src="/images/email.svg"
+              alt=""
+              class="contact-icon"
+            />
+            Email
+          </a>
           <a
             class="button"
             data-variant="pink"
             href="https://www.linkedin.com/company/elife-sciences-publications-ltd"
-            >LinkedIn</a
           >
+            <img
+              src="/images/linkedin.svg"
+              alt=""
+              class="contact-icon"
+            />
+            LinkedIn
+          </a>
           <a
             class="button"
             data-variant="pink"
             href="https://bsky.app/profile/did:plc:4irghgzlsjk6ugrekoqyl7km"
-            >Bluesky</a
           >
+            <img
+              src="/images/bluesky.svg"
+              alt=""
+              class="contact-icon"
+            />
+            Bluesky
+          </a>
         </nav>
       </div>
     </div>
@@ -98,5 +116,18 @@
 
   .cta-section h2 i {
     color: var(--color-pink);
+  }
+
+  .cta-section nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375em;
+    padding-inline: 1.25rem;
+  }
+
+  .contact-icon {
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
   }
 </style>
