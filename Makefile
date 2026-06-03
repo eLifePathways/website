@@ -58,3 +58,12 @@ vrt-test: node_modules .vrt-image
 
 vrt-report: node_modules
 	npx playwright show-report visual-regression/html_report
+
+vrt-test-no-report: node_modules .vrt-image
+	lsof -t -i TCP:4321 -s TCP:LISTEN | xargs kill 2>/dev/null || true; \
+	npx astro build; \
+	npx astro preview --port 4321 --host --allowed-hosts host.docker.internal & PREVIEW_PID=$$!; \
+	until curl -sf http://localhost:4321/ > /dev/null; do sleep 1; done; \
+	$(VRT_RUN); STATUS=$$?; \
+	kill $$PREVIEW_PID 2>/dev/null; \
+	exit $$STATUS
