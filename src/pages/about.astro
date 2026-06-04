@@ -78,7 +78,7 @@ const jsonLd = {
 
       <ContentSection>
         <h2>Who we are</h2>
-        <ul class="flow">
+        <ul>
           <li>
             <AboutContentItem
               name="Michael Markie"
@@ -127,5 +127,9 @@ const jsonLd = {
     list-style: none;
     margin: 0;
     padding: 0;
+  }
+
+  li {
+    margin-block-end: clamp(2.5rem, calc(1.227rem + 6.364vw), 6rem);
   }
 </style>

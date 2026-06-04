@@ -18,9 +18,7 @@ Our mission? To build and service a diverse, inclusive, and coordinated publishi
 Simply opening up source code isn't enough to drive widespread adoption of open scholarly infrastructure. It requires a hands-on approach, technical expertise, and intentional connection. eLife Pathways will therefore focus on three actionable pillars:
 
 1. **Deliver community-validated enhancements:** We will upgrade our existing software and connect it directly to key open-source infrastructures to accelerate adoption and significantly improve interoperability across the ecosystem. We will make community-driven changes to [Kotahi](https://kotahi.community/), [Sciety](https://sciety.org/) and eLife's [preprint review](https://elifesciences.org/inside-elife/e793d834/what-is-a-reviewed-preprint) infrastructure.
-   
 2. **Co-develop free, open-source tooling:** In partnership with like-minded organisations, we will co-create integrated tools that strengthen open scholarly infrastructure and deliver meaningful impact for the communities they serve. Our first project will be to develop a universal JATS XML conversion solution with the Public Knowledge Project.
-   
 3. **Participate in important community projects:** We will provide the underlying technology and operational strength needed to boost new projects and initiatives, ensuring they gain momentum and drive long-term resilience. We are currently collaborating with [COMET](https://www.cometadata.org/) on their [projects](https://www.cometadata.org/projects/) and working on the [Open Exchange Architecture (OXA)](https://oxa.dev/) to support interoperable, structured scientific content.
 
 ## Redirecting Our Technology Focus
