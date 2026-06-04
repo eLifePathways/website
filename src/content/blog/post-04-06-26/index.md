@@ -13,7 +13,7 @@ To bridge these gaps, Wellcome has funded us to develop a new independent initia
 
 Our mission? To build and service a diverse, inclusive, and coordinated publishing ecosystem for all. By strengthening existing collaborations and forging new ones, eLife Pathways aims to empower the community to embrace open technology, where communities assess research responsibly, share knowledge equitably, and spark innovation.
 
-## What Will eLife Pathways Do?
+### What Will eLife Pathways Do?
 
 Simply opening up source code isn't enough to drive widespread adoption of open scholarly infrastructure. It requires a hands-on approach, technical expertise, and intentional connection. eLife Pathways will therefore focus on three actionable pillars:
 
@@ -23,7 +23,7 @@ Simply opening up source code isn't enough to drive widespread adoption of open 
    
 3. **Participate in important community projects:** We will provide the underlying technology and operational strength needed to boost new projects and initiatives, ensuring they gain momentum and drive long-term resilience. We are currently collaborating with [COMET](https://www.cometadata.org/) on their [projects](https://www.cometadata.org/projects/) and working on the [Open Exchange Architecture (OXA)](https://oxa.dev/) to support interoperable, structured scientific content.
 
-## Redirecting Our Technology Focus
+### Redirecting Our Technology Focus
 
 We aren't starting from scratch. Our [experience](https://elifesciences.org/inside-elife/b6a249af/technology-at-elife-10-years-of-innovation) building and sharing open-source infrastructure has given us deep, practical knowledge of what a truly open science ecosystem needs. Since 2022, eLife's technology team has driven its energy inward, focusing on transitioning the eLife journal to a PRC workflow. In doing so, we have built robust, flexible, and extensible technology capable of supporting a diverse range of interconnected open science workflows.
 
