@@ -6,19 +6,35 @@ interface Props {
   image: string;
 }
 
-const { name, jobTitle, about } = Astro.props;
+const { name, jobTitle, about, image } = Astro.props;
 ---
 
-<article>
-  <h3>{name}</h3>
-  <p>{jobTitle}</p>
-  <p>
-    {about}
-  </p>
+<article class="flow">
+  <div class="header cluster">
+    <img src={image} alt={name} class="headshot" />
+    <div>
+      <h3>{name}</h3>
+      <p>{jobTitle}</p>
+    </div>
+  </div>
+  <p>{about}</p>
 </article>
 
 <style>
   h3 {
     font-size: var(--font-size-lg);
+  }
+
+  .header {
+    --cluster-gap: var(--space-md);
+    align-items: center;
+  }
+
+  .headshot {
+    width: 130px;
+    height: 130px;
+    border-radius: 400px;
+    object-fit: cover;
+    flex-shrink: 0;
   }
 </style>
