@@ -5,7 +5,7 @@ const PAGES = [
   { path: "/about", name: "about" },
   { path: "/solutions", name: "solutions" },
   { path: "/partnerships", name: "partnerships" },
-  { path: "/blog", name: "blog-listing" },
+  // { path: "/blog", name: "blog-listing" },
   { path: "/blog/post-07-05-25/", name: "blog-page" },
   { path: "/#mobile-nav", name: "mobile-nav", projects: ["mobile"] },
 ];
