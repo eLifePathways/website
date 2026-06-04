@@ -1,0 +1,23 @@
+---
+interface Props {
+  name: string;
+  jobTitle: string;
+  about: string;
+}
+
+const { name, jobTitle, about } = Astro.props;
+---
+
+<article>
+  <h3>{name}</h3>
+  <p>{jobTitle}</p>
+  <p>
+    {about}
+  </p>
+</article>
+
+<style>
+  h3 {
+    font-size: var(--font-size-lg);
+  }
+</style>

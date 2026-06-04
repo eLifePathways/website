@@ -6,6 +6,7 @@ import MobileNav from "../components/MobileNav.astro";
 import PageHead from "../components/PageHead.astro";
 import PageHero from "../components/PageHero.astro";
 import MetaTags from "../components/MetaTags.astro";
+import AboutContentItem from "../components/AboutContentItem.astro";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -77,22 +78,33 @@ const jsonLd = {
 
       <ContentSection>
         <h2>Who we are</h2>
-        <p>
-          <b>Michael Markie:</b> Michael has spent 15 years at the heart of the open
-          science movement. He’s a firm believer that the best way to move scholarly
-          communication forward is together. By matching the right technology with
-          what the community actually needs, Michael turns ambitious ideas into real-world
-          tools and solutions that help researchers and like-minded organisations
-          thrive.
-        </p>
-        <p>
-          <b>Paul Shannon:</b> Paul has spent over two decades at the forefront of
-          agile and lean software development. He’s a firm believer that the best
-          way to build high-quality technology is through empowered, high-performing
-          teams. By translating complex technical challenges into clear goals, Paul
-          leads eLife’s technology team to use modern engineering practices that deliver
-          innovative software for open science.
-        </p>
+        <ul>
+          <li>
+            <AboutContentItem
+              name="Michael Markie"
+              jobTitle="Head of Innovation Initiatives, eLife"
+              about="Michael has spent 15 years at the heart of the open science
+                movement. He’s a firm believer that the best way to move
+                scholarly communication forward is together. By matching the
+                right technology with what the community actually needs, Michael
+                turns ambitious ideas into real-world tools and solutions that
+                help researchers and like-minded organisations thrive."
+            />
+          </li>
+          <li>
+            <AboutContentItem
+              name="Paul Shannon"
+              jobTitle="Head of Technology, eLife"
+              about="Paul has spent over two decades at the forefront of agile and
+                lean software development. He’s a firm believer that the best
+                way to build high-quality technology is through empowered,
+                high-performing teams. By translating complex technical
+                challenges into clear goals, Paul leads eLife’s technology team
+                to use modern engineering practices that deliver innovative
+                software for open science."
+            />
+          </li>
+        </ul>
       </ContentSection>
     </main>
     <Footer />
@@ -106,5 +118,11 @@ const jsonLd = {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     line-height: 1.5;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 </style>
