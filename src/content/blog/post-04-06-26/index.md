@@ -3,6 +3,7 @@ title: "eLife Pathways: Building a collaborative open science ecosystem"
 date: 2026-06-04
 imageAlt: "eLife pathways logo"
 ---
+
 # eLife Pathways: Building a collaborative open science ecosystem
 
 The promise of open science to revolutionise scholarly communication is undeniable. Around the globe, the research community is eager for more transparent, equitable, and efficient ways to share knowledge. Yet, significant gaps in technology, knowledge, and expertise hinder this vision.
