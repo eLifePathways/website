@@ -14,25 +14,26 @@ const { name, jobTitle, about, image } = Astro.props;
     <img src={image} alt={name} class="headshot" />
     <div>
       <h3>{name}</h3>
-      <p class="job-title">{jobTitle}</p>
+      <p>{jobTitle}</p>
     </div>
   </div>
   <p>{about}</p>
 </article>
 
 <style>
-  h3 {
-    font-size: var(--font-size-lg);
-    margin-top: 0;
-  }
-
-  .job-title {
-    line-height: var(--line-height-snug);
-    margin-top: var(--space-xs);
-  }
   .header {
     --cluster-gap: var(--space-md);
     align-items: center;
+  }
+
+  h3 {
+    font-size: var(--font-size-lg);
+    margin-block-start: 0;
+  }
+
+  .header p {
+    line-height: var(--line-height-snug);
+    margin-top: var(--space-xs);
   }
 
   .headshot {
