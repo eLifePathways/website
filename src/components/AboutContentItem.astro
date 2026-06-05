@@ -29,6 +29,14 @@ const { name, jobTitle, about, image, socialLink } = Astro.props;
   .header {
     --cluster-gap: var(--space-md);
     align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 30rem) {
+    .header {
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+    }
   }
 
   h3 {
