@@ -32,21 +32,28 @@ const { name, jobTitle, about, image, socialLink } = Astro.props;
     justify-content: center;
   }
 
-  @media (min-width: 30rem) {
-    .header {
-      justify-content: flex-start;
-      flex-wrap: nowrap;
-    }
-  }
-
   h3 {
     font-size: clamp(1.125rem, calc(0.989rem + 0.682vw), 1.5rem);
     margin-block-start: 0;
+    text-align: center;
   }
 
   .header p {
     line-height: var(--line-height-snug);
     margin-top: var(--space-xs);
+    text-align: center;
+  }
+
+  @media (min-width: 30rem) {
+    .header {
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+    }
+
+    h3,
+    .header p {
+      text-align: revert;
+    }
   }
 
   .headshot {
