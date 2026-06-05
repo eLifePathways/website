@@ -19,7 +19,10 @@ const { name, jobTitle, about, image, socialLink } = Astro.props;
     </div>
   </div>
   <p>{about}</p>
-  <a href={socialLink} class="social-link-button">LinkedIn</a>
+  <a href={socialLink} class="social-link-button">
+    <img src="/images/linkedin-sml.svg" alt="" class="social-link-icon" />
+    LinkedIn
+  </a>
 </article>
 
 <style>
@@ -47,13 +50,20 @@ const { name, jobTitle, about, image, socialLink } = Astro.props;
   }
 
   .social-link-button {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
     background-color: #ffeacb;
     color: var(--color-pink);
     font-weight: var(--font-weight-semibold);
-    padding: var(--space-xs) var(--space-md);
+    padding: var(--space-xs) var(--space-sm);
     border-radius: var(--card-border-radius);
     text-decoration: none;
+  }
+
+  .social-link-icon {
+    width: 20px;
+    height: 20px;
   }
 
   .social-link-button:hover {
