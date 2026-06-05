@@ -2,11 +2,12 @@
 interface Props {
   name: string;
   jobTitle: string;
+  socialLink: string;
   about: string;
   image: string;
 }
 
-const { name, jobTitle, about, image } = Astro.props;
+const { name, jobTitle, about, image, socialLink } = Astro.props;
 ---
 
 <article class="flow">
