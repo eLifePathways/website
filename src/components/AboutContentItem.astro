@@ -19,6 +19,7 @@ const { name, jobTitle, about, image, socialLink } = Astro.props;
     </div>
   </div>
   <p>{about}</p>
+  <a href={socialLink} class="social-link-button">LinkedIn</a>
 </article>
 
 <style>
@@ -43,5 +44,15 @@ const { name, jobTitle, about, image, socialLink } = Astro.props;
     border-radius: 400px;
     object-fit: cover;
     flex-shrink: 0;
+  }
+
+  .social-link-button {
+    display: inline-block;
+    background-color: #FFEACB;
+    color: var(--color-pink);
+    font-weight: var(--font-weight-semibold);
+    padding: var(--space-xs) var(--space-md);
+    border-radius: var(--card-border-radius);
+    text-decoration: none;
   }
 </style>
