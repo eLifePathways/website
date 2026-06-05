@@ -7,6 +7,7 @@ import PageHead from "../components/PageHead.astro";
 import PageHero from "../components/PageHero.astro";
 import MetaTags from "../components/MetaTags.astro";
 import AboutContentItem from "../components/AboutContentItem.astro";
+import PageHeroWithEmphasis from "../components/PageHeroWithEmphasis.astro";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -36,9 +37,13 @@ const jsonLd = {
   </head>
   <body>
     <main>
-      <PageHero
+      <PageHeroWithEmphasis
         pageTitle="About"
         pageHeading="Driving innovation in scholarly communication"
+        emphasisText="eLife Pathways, a technology initiative from eLife, develops
+          open-source software and infrastructure to advance open science. The
+          initiative transforms how the global community communicates, reviews,
+          and assesses research."
       >
         <p>
           eLife Pathways, a technology initiative from eLife, develops
@@ -66,7 +71,7 @@ const jsonLd = {
           embrace open technology, assess research responsibly, and share
           knowledge equitably.
         </p>
-      </PageHero>
+      </PageHeroWithEmphasis>
 
       <ContentSection>
         <h2>Our Story</h2>
