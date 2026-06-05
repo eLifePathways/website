@@ -19,7 +19,11 @@ const { name, jobTitle, about, image, socialLink } = Astro.props;
     </div>
   </div>
   <p>{about}</p>
-  <a href={socialLink} class="social-link-button">
+  <a
+    href={socialLink}
+    class="social-link-button"
+    aria-label={`${name} LinkedIn profile`}
+  >
     <img src="/images/linkedin-sml.svg" alt="" class="social-link-icon" />
     LinkedIn
   </a>
