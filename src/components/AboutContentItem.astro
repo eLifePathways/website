@@ -48,11 +48,15 @@ const { name, jobTitle, about, image, socialLink } = Astro.props;
 
   .social-link-button {
     display: inline-block;
-    background-color: #FFEACB;
+    background-color: #ffeacb;
     color: var(--color-pink);
     font-weight: var(--font-weight-semibold);
     padding: var(--space-xs) var(--space-md);
     border-radius: var(--card-border-radius);
     text-decoration: none;
+  }
+
+  .social-link-button:hover {
+    background-color: #fed3b1;
   }
 </style>
