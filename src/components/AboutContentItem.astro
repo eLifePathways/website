@@ -30,6 +30,7 @@ const { name, jobTitle, about, image, socialLink } = Astro.props;
     --cluster-gap: var(--space-md);
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
 
   h3 {
@@ -46,6 +47,7 @@ const { name, jobTitle, about, image, socialLink } = Astro.props;
 
   @media (min-width: 30rem) {
     .header {
+      flex-direction: row;
       justify-content: flex-start;
       flex-wrap: nowrap;
     }
