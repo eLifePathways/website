@@ -1,5 +1,5 @@
 ---
-title: "eLife Pathways is now stewarding kotahi"
+title: "eLife Pathways is now stewarding Kotahi"
 date: 2026-06-11
 imageAlt: "Kotahi logo"
 image: "./kotahi-logo.png"
