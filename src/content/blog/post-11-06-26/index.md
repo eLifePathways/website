@@ -1,10 +1,10 @@
 ---
-title: "eLife Pathways is Now Stewarding Kotahi"
+title: "eLife Pathways is now stewarding kotahi"
 date: 2026-06-11
 imageAlt: "Kotahi logo"
 summary: "eLife Pathways is now stewarding Kotahi, the open-source publishing platform designed to support the innovtive publishing workflows, from submission to publication."
 ---
-One of the first major steps for **eLife Pathways** is taking on the official stewardship of **Kotahi** from the Coko Foundation. Following the [Coko Foundation's sunset] (https://coko.foundation/) at the start of this year, eLife Pathways stepped forward after learning that the foundation was seeking a new steward for the platform. Our history and shared mission made this transition a completely natural fit.
+One of the first major steps for **eLife Pathways** is taking on the official stewardship of **Kotahi** from the Coko Foundation. Following the [Coko Foundation's sunset](https://coko.foundation/) at the start of this year, eLife Pathways stepped forward after learning that the foundation was seeking a new steward for the platform. Our history and shared mission made this transition a completely natural fit.
 
 ## Kotahi’s journey
 
@@ -17,12 +17,12 @@ We have collaborated closely with Coko on Kotahi’s development since its incep
 We see Kotahi as a cornerstone of our long-term strategy. Bringing it under the eLife Pathways umbrella enables us to:
 * **Empower a community-driven roadmap**: We can engage the existing, vibrant Kotahi community to develop a roadmap that lets the partners and groups who use Kotahi shape where the technology goes next.
 * **Drive intentional development**: We can now steer the development of Kotahi with a direct focus on ecosystem-wide utility, ensuring the software remains robust, modern, and accessible.
-* **Deepen ecosystem interoperability**: Direct stewardship allows us to seamlessly connect Kotahi with other major open infrastructures (including eLife’s [preprint review] (https://elifesciences.org/inside-elife/e793d834/what-is-a-reviewed-preprint) infrastructure and [Sciety] (https://sciety.org/) and provide tooling and features that other systems will benefit from.
+* **Deepen ecosystem interoperability**: Direct stewardship allows us to seamlessly connect Kotahi with other major open infrastructures (including eLife’s [preprint review](https://elifesciences.org/inside-elife/e793d834/what-is-a-reviewed-preprint) infrastructure and [Sciety](https://sciety.org/) and provide tooling and features that other systems will benefit from.
 
 ## What’s the current situation?
 
 Since taking on responsibility for the Kotahi infrastructure at the start of the year, we have focused on migrating the platform into the eLife Pathways ecosystem. Our technical team is currently hard at work improving the architecture's robustness and stability. At the same time, we are collaborating with the active Kotahi community to co-create a roadmap for the year ahead.
-We are also starting to open the door to expansion. Our team is actively speaking with new research groups eager to adopt the infrastructure, while simultaneously pursuing integration opportunities with other open-source infrastructure providers to see how we can interoperate and build a more connected scholarly network. A recent example is Kotahi’s role in the recently Open Science NL-funded project: [Next-generation publishing, advancing the Publish-Review-Curate model] (https://www.nwo.nl/en/projects/xlemc16650), where eLife Pathways will work alongside researchers, institutes and technologists to create interoperable publishing technology.
+We are also starting to open the door to expansion. Our team is actively speaking with new research groups eager to adopt the infrastructure, while simultaneously pursuing integration opportunities with other open-source infrastructure providers to see how we can interoperate and build a more connected scholarly network. A recent example is Kotahi’s role in the recently Open Science NL-funded project: [Next-generation publishing, advancing the Publish-Review-Curate model](https://www.nwo.nl/en/projects/xlemc16650), where eLife Pathways will work alongside researchers, institutes and technologists to create interoperable publishing technology.
 
 ## Our vision for Kotahi
 
