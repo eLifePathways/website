@@ -2,8 +2,7 @@
 title: "eLife Pathways is now stewarding kotahi"
 date: 2026-06-11
 imageAlt: "Kotahi logo"
-image: "./Kotahi-logo.png"
-imageAlt: "Kotahi logo"
+image: "./kotahi-logo.png"
 summary: "eLife Pathways is now stewarding Kotahi, the open-source publishing platform designed to support the innovtive publishing workflows, from submission to publication."
 ---
 One of the first major steps for **eLife Pathways** is taking on the official stewardship of **Kotahi** from the Coko Foundation. Following the [Coko Foundation's sunset](https://coko.foundation/) at the start of this year, eLife Pathways stepped forward after learning that the foundation was seeking a new steward for the platform. Our history and shared mission made this transition a completely natural fit.
