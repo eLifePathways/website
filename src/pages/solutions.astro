@@ -7,6 +7,7 @@ import PageHero from "../components/PageHero.astro";
 import ContentSection from "../components/ContentSection.astro";
 import MetaTags from "../components/MetaTags.astro";
 import ProjectCard from "../components/ProjectCard.astro";
+import PageHeroWithEmphasis from "../components/PageHeroWithEmphasis.astro";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -36,21 +37,20 @@ const jsonLd = {
   </head>
   <body>
     <main>
-      <PageHero
+      <PageHeroWithEmphasis
         pageTitle="Solutions"
-        pageHeading="Interoperable infrastructure for the open science ecosystem"
+        pageHeading="Building open-source publishing software to further open science"
+        emphasisText="Through our partnerships, we’re working towards an interoperable and modular publishing ecosystem for the benefit of the global scientific community."
       >
         <p>
-          The greatest untapped potential in open infrastructure lies in its
-          underlying “plumbing”. By prioritising seamless integration and
-          interoperability we transform existing open-source tools into
-          high-performance systems for the global community. Our development of <a
-            href="https://sciety.org/">Sciety</a
-          > and <a href="https://kotahi.community/">Kotahi</a> establishes an adaptable
-          foundation for scholarly communication, allowing us to build new community-led
-          prototypes that bridge existing gaps and unify the open science ecosystem.
+          The traditional academic publishing system is outdated. It stifles
+          innovation, restricts equity, and fails to adequately connect research
+          outputs or support machine-readable science. That’s why eLife Pathways
+          exists: to bring people together, foster collaboration across the
+          ecosystem, create better ways to share research, and build a strong,
+          shared foundation that empowers the global research community.
         </p>
-      </PageHero>
+      </PageHeroWithEmphasis>
 
       <ContentSection>
         <h2>Open Publishing</h2>
