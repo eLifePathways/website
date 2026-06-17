@@ -1,5 +1,5 @@
 ---
-title: "eLife Pathways Joins CAIROS: Building a collectively owned research commons"
+title: "eLife Pathways Joins CAIROS"
 date: 2026-06-18
 imageAlt: "Cosmik and Discourse Graphs logos"
 image: "./cairos-logos.png"
