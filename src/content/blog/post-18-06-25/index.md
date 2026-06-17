@@ -2,6 +2,7 @@
 title: "eLife Pathways Joins CAIROS: Building a collectively owned research commons"
 date: 2026-06-18
 imageAlt: "Cosmik and Discourse Graphs logos"
+image: "./cairos-logos.png"
 summary: "eLife Pathways is joining the CAIROS network, a cooperative federation dedicated to building open and sustainable research commons."
 ---
 
