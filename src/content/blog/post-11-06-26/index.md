@@ -5,6 +5,7 @@ imageAlt: "Kotahi logo"
 image: "./kotahi-logo.png"
 summary: "eLife Pathways is now stewarding Kotahi, the open-source publishing platform designed to support innovative publishing workflows, from submission to publication."
 ---
+
 One of the first major steps for **eLife Pathways** is taking on the official stewardship of **Kotahi** from the Coko Foundation. Following the [Coko Foundation's sunset](https://coko.foundation/) at the start of this year, eLife Pathways stepped forward after learning that the foundation was seeking a new steward for the platform. Our history and shared mission made this transition a completely natural fit.
 
 ## Kotahi’s journey
@@ -17,9 +18,10 @@ Today, Kotahi supports the review-and-assessment publication component of eLife'
 
 We have collaborated closely with Coko on Kotahi’s development since its inception. Because we are familiar with its codebase and have already worked with many of the academic groups currently using the software, we managed a smooth transition while maintaining full operational stability for the existing user base.
 We see Kotahi as a cornerstone of our long-term strategy. Bringing it under the eLife Pathways umbrella enables us to:
-* **Empower a community-driven roadmap**: We can engage the existing, vibrant Kotahi community to develop a roadmap that lets the partners and groups who use Kotahi shape where the technology goes next.
-* **Drive intentional development**: We can now steer the development of Kotahi with a direct focus on ecosystem-wide utility, ensuring the software remains robust, modern, and accessible.
-* **Deepen ecosystem interoperability**: Direct stewardship allows us to seamlessly connect Kotahi with other major open infrastructures (including eLife’s [preprint review](https://elifesciences.org/inside-elife/e793d834/what-is-a-reviewed-preprint) infrastructure and [Sciety](https://sciety.org/) and provide tooling and features that other systems will benefit from.
+
+- **Empower a community-driven roadmap**: We can engage the existing, vibrant Kotahi community to develop a roadmap that lets the partners and groups who use Kotahi shape where the technology goes next.
+- **Drive intentional development**: We can now steer the development of Kotahi with a direct focus on ecosystem-wide utility, ensuring the software remains robust, modern, and accessible.
+- **Deepen ecosystem interoperability**: Direct stewardship allows us to seamlessly connect Kotahi with other major open infrastructures (including eLife’s [preprint review](https://elifesciences.org/inside-elife/e793d834/what-is-a-reviewed-preprint) infrastructure and [Sciety](https://sciety.org/) and provide tooling and features that other systems will benefit from.
 
 ## What’s the current situation?
 
@@ -34,4 +36,3 @@ Kotahi serves as a foundational piece of open infrastructure that advances the o
 To realise this opportunity, we are streamlining Kotahi’s system to make adoption seamless for the community. Direct community feedback guides our roadmap as we develop integrations with other open scholarly publishing infrastructures to simplify tasks like data migration and workflow orchestration.
 
 To learn more about Kotahi and our plans, get in touch at <technology@elifesciences.org>.
-
