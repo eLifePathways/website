@@ -33,7 +33,7 @@ Collectively, there are three areas we will explore in coordination that we feel
 
 **Structured scientific discourse**: Outside formal review, there is real opportunity to harness large-scale collaboration that recognises diverse contributions through social networking and expert-curation groups. Both [Semble](https://semble.so/) and [Sciety](https://sciety.org/) are exploring how to harness community sensemaking and social knowledge to enhance research consumption.
 
-**Collective Augmented Intelligence**: Modular research and structured discourse enable the design of collective intelligence systems where AI and humans continuously improve each other. By placing cooperative governance at the centre, we can ensure that human oversight is maintained, extractive interests are kept out, and the value generated is reinvested directly back into the scientific ecosystem.
+**Collective Augmented Intelligence:** Modular research and structured discourse enable the design of collective intelligence systems where AI and humans continuously improve each other. By placing cooperative governance at the centre, we can ensure that human oversight is maintained, extractive interests are kept out, and the value generated is reinvested directly back into the scientific ecosystem.
    
 If you're interested in our ideas and the movement toward a collectively owned research commons, we want to hear from you. Whether you’re a researcher, an open-science advocate, a community organiser, or a funder interested in supporting this shift - get in touch. Drop us a message at <hello@cairos.network> or share your details via our [contact form](https://forms.cairos.network/connect). 
 
