@@ -74,20 +74,26 @@ const jsonLd = {
           research information, and support the needs of modular,
           machine-readable research.
         </p>
-        <ProjectCardWide
-          name="Kotahi"
-          description="An open-source, end-to-end publishing platform for preprint servers, preprint review, journals and micropublications. Kotahi supports AI-driven, customisable workflows to make scientific publishing faster, more modular, and machine-readable."
-          aboutUrl="https://kotahi.community/"
-          githubUrl="https://github.com/elifepathways/kotahi"
-          logoSrc="/images/kotahi-logo-48.svg"
-        />
-        <ProjectCardWide
-          name="Sciety"
-          description="Is a free, open-source platform that aggregates preprint evaluations from across the global scholarly network. By bringing discoveries, reviews, and curation into one shared space, Sciety helps researchers filter and discover the latest research."
-          aboutUrl="https://sciety.org/"
-          githubUrl="https://github.com/sciety/sciety"
-          logoSrc="/images/sciety-logo-48.svg"
-        />
+        <ul class="project-cards-wide">
+          <li>
+            <ProjectCardWide
+              name="Kotahi"
+              description="An open-source, end-to-end publishing platform for preprint servers, preprint review, journals and micropublications. Kotahi supports AI-driven, customisable workflows to make scientific publishing faster, more modular, and machine-readable."
+              aboutUrl="https://kotahi.community/"
+              githubUrl="https://github.com/elifepathways/kotahi"
+              logoSrc="/images/kotahi-logo-48.svg"
+            />
+          </li>
+          <li>
+            <ProjectCardWide
+              name="Sciety"
+              description="Is a free, open-source platform that aggregates preprint evaluations from across the global scholarly network. By bringing discoveries, reviews, and curation into one shared space, Sciety helps researchers filter and discover the latest research."
+              aboutUrl="https://sciety.org/"
+              githubUrl="https://github.com/sciety/sciety"
+              logoSrc="/images/sciety-logo-48.svg"
+            />
+          </li>
+        </ul>
       </ContentSection>
 
       <ContentSection>
@@ -176,6 +182,16 @@ const jsonLd = {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     line-height: 1.5;
+  }
+
+  .project-cards-wide {
+    margin-block-start: var(--space-xl);
+    list-style: none;
+    padding-inline-start: 0;
+  }
+
+  .project-cards-wide li {
+    margin-block-end: var(--space-lg);
   }
 
   .project-cards {
