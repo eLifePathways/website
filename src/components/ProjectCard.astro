@@ -14,9 +14,9 @@ const { name, description, aboutUrl, githubUrl, logoSrc } = Astro.props;
   <h3>
     <img src={logoSrc} alt={name} />
   </h3>
-  <p class="project-card__description">{description}</p>
-  <div class="project-card__links">
-    <a class="project-card__link" href={aboutUrl} rel="noopener noreferrer">
+  <p class="project-card-description">{description}</p>
+  <div class="project-card-links">
+    <a class="project-card-link" href={aboutUrl} rel="noopener noreferrer">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 16 16"
@@ -31,11 +31,7 @@ const { name, description, aboutUrl, githubUrl, logoSrc } = Astro.props;
     </a>
     {
       githubUrl && (
-        <a
-          class="project-card__link"
-          href={githubUrl}
-          rel="noopener noreferrer"
-        >
+        <a class="project-card-link" href={githubUrl} rel="noopener noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
@@ -77,7 +73,7 @@ const { name, description, aboutUrl, githubUrl, logoSrc } = Astro.props;
     object-position: left center;
   }
 
-  .project-card__description {
+  .project-card-description {
     flex: 1;
     font-size: var(--font-size-base);
     color: var(--color-peach-text);
@@ -85,13 +81,13 @@ const { name, description, aboutUrl, githubUrl, logoSrc } = Astro.props;
     margin: 0;
   }
 
-  .project-card__links {
+  .project-card-links {
     display: flex;
     gap: var(--space-md);
     margin-block-start: var(--space-xs);
   }
 
-  .project-card__link {
+  .project-card-link {
     display: inline-flex;
     align-items: center;
     gap: 0.375rem;
@@ -101,11 +97,11 @@ const { name, description, aboutUrl, githubUrl, logoSrc } = Astro.props;
     text-decoration: none;
   }
 
-  .project-card__link:hover {
+  .project-card-link:hover {
     text-decoration: underline;
   }
 
-  .project-card__link svg {
+  .project-card-link svg {
     width: 1rem;
     height: 1rem;
     flex-shrink: 0;
