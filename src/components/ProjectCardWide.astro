@@ -57,7 +57,7 @@ const { name, description, aboutUrl, githubUrl, logoSrc } = Astro.props;
 <style>
   .project-card-wide {
     border-radius: var(--card-border-radius);
-    padding: var(--space-lg);
+    padding: clamp(1.5rem, calc(1.136rem + 1.818vw), 2.5rem);
     display: flex;
     flex-direction: column;
     gap: var(--space-sm);
