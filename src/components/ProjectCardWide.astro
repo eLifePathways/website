@@ -76,7 +76,7 @@ const { name, description, aboutUrl, githubUrl, logoSrc } = Astro.props;
   }
 
   .project-card-wide-description {
-    font-size: var(--font-size-base);
+    font-size: clamp(0.875rem, calc(0.83rem + 0.227vw), 1rem);
     color: var(--color-peach-text);
     line-height: var(--line-height-base);
     margin: 0;
