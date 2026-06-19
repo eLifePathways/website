@@ -68,8 +68,8 @@ const { name, description, aboutUrl, githubUrl, logoSrc } = Astro.props;
   }
 
   h3 img {
-    width: 156px;
-    height: 69px;
+    width: clamp(108px, calc(90.545px + 5.455vw), 156px);
+    height: clamp(48px, calc(40.364px + 2.386vw), 69px);
     object-fit: contain;
     object-position: left center;
   }
