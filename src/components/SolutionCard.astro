@@ -1,0 +1,55 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  iconSrc: string;
+}
+
+const { title, description, iconSrc } = Astro.props;
+---
+
+<article class="solution-card">
+  <div class="solution-card-heading">
+    <img class="solution-card-icon" src={iconSrc} alt="" />
+    <h3>{title}</h3>
+  </div>
+  <p class="solution-card-description">{description}</p>
+</article>
+
+<style>
+  .solution-card {
+    border-block: 1px solid rgba(27, 10, 60, 0.15);
+    padding-block: var(--space-md);
+  }
+
+  .solution-card-heading {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+  }
+
+  .solution-card-icon {
+    flex-shrink: 0;
+    width: 4rem;
+    height: 4rem;
+    padding: var(--space-xs);
+    background-color: var(--color-peach);
+    border-radius: var(--card-border-radius);
+  }
+
+  h3 {
+    margin: 0;
+    color: var(--color-dark-purple);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-base);
+  }
+
+  .solution-card-description {
+    margin: 0;
+    margin-block-start: var(--space-sm);
+    color: var(--color-peach-text);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+  }
+</style>

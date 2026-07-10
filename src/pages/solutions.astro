@@ -9,6 +9,7 @@ import MetaTags from "../components/MetaTags.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import PageHeroWithEmphasis from "../components/PageHeroWithEmphasis.astro";
 import ProjectCardWide from "../components/ProjectCardWide.astro";
+import SolutionCard from "../components/SolutionCard.astro";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -61,7 +62,24 @@ const jsonLd = {
           and shared standards, we enable platforms to work together seamlessly
           and strengthen the open ecosystem.
         </p>
-        <div new-feature class="hidden"><p>Feature flag</p></div>
+        <div new-feature class="hidden">
+          <ul class="solution-cards">
+            <li>
+              <SolutionCard
+                title="Preprinting for earlier sharing and faster publication"
+                description="Submit early-stage research outputs and instantly convert them into publication-ready, machine-readable formats."
+                iconSrc="/images/solutions-page-icons/fast-sharing.svg"
+              />
+            </li>
+            <li>
+              <SolutionCard
+                title="Flexible publishing workflows and tooling"
+                description="Configure customisable editorial workflows with integrated task management and AI-assisted publishing tools."
+                iconSrc="/images/solutions-page-icons/flexible-workflows.svg"
+              />
+            </li>
+          </ul>
+        </div>
       </ContentSection>
 
       <ContentSection>
@@ -194,6 +212,16 @@ const jsonLd = {
 
   .hidden {
     display: none;
+  }
+
+  .solution-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    gap: 0 var(--space-lg);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-block-start: var(--space-lg);
   }
 
   .project-cards-wide {
