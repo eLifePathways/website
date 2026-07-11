@@ -225,6 +225,11 @@
   --font-size-2xl: 2.5rem; /* 40px */
   --font-size-3xl: 3rem; /* 48px */
   --font-size-4xl: 5rem; /* 80px */
+  --font-size-sm-to-base: clamp(
+    var(--font-size-sm),
+    calc(0.83rem + 0.227vw),
+    var(--font-size-base)
+  );
 
   /* Font weights */
   --font-weight-regular: 400;
