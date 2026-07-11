@@ -41,7 +41,7 @@ const { title, description, iconSrc } = Astro.props;
   h3 {
     margin: 0;
     color: var(--color-dark-purple);
-    font-size: var(--font-size-base);
+    font-size: clamp(0.875rem, calc(0.83rem + 0.227vw), 1rem);
     font-weight: var(--font-weight-semibold);
     line-height: var(--line-height-base);
   }
@@ -50,7 +50,7 @@ const { title, description, iconSrc } = Astro.props;
     margin: 0;
     margin-block-start: 18px;
     color: var(--color-dark-purple);
-    font-size: var(--font-size-base);
+    font-size: clamp(0.875rem, calc(0.83rem + 0.227vw), 1rem);
     line-height: var(--line-height-base);
   }
 </style>
