@@ -15,6 +15,7 @@ import SiteNav from "./SiteNav.astro";
       An open-source initiative from eLife dedicated to co-creating a more
       connected and collaborative open science ecosystem.
     </p>
+    <a class="button hero-button" href="about">About eLife Pathways</a>
   </div>
 </header>
 
@@ -68,6 +69,11 @@ import SiteNav from "./SiteNav.astro";
     vertical-align: baseline;
   }
 
+  .hero-button {
+    margin-inline: auto;
+    margin-top: 2.25rem;
+  }
+
   @media (min-width: 30rem) {
     .hero-dot {
       width: 0.875rem;
@@ -95,6 +101,12 @@ import SiteNav from "./SiteNav.astro";
   }
 
   @media (min-width: 50rem) {
+    .hero-button {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      padding: 0.875rem 1.75rem;
+    }
+
     .hero-dot {
       width: 1.25rem;
       height: 1.25rem;
