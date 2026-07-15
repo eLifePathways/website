@@ -62,7 +62,7 @@ const jsonLd = {
           and shared standards, we enable platforms to work together seamlessly
           and strengthen the open ecosystem.
         </p>
-        <div new-feature class="hidden">
+        <div>
           <ul class="solution-cards">
             <li>
               <SolutionCard
@@ -220,14 +220,7 @@ const jsonLd = {
     </main>
     <Footer />
     <MobileNav />
-  </body><script>
-    (() => {
-      "use strict";
-      if (window.location.search.includes("new-feature")) {
-        document.querySelector("[new-feature]").classList.remove("hidden");
-      }
-    })();
-  </script>
+  </body>
 </html>
 
 <style>
@@ -236,10 +229,6 @@ const jsonLd = {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     line-height: 1.5;
-  }
-
-  .hidden {
-    display: none;
   }
 
   .solution-cards {
