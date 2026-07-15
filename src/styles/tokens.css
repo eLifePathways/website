@@ -22,12 +22,20 @@
   --space-xl: 4rem; /* 64px */
   --space-2xl: 6rem; /* 96px */
   --space-m-xl: clamp(1.5rem, 0.4773rem + 4.5455vw, 4rem);
+  --space-lg-2xl: clamp(2.5rem, calc(1.227rem + 6.364vw), 6rem);
   --vertical-space-between-sections: clamp(
     3.75rem,
     calc(2.386rem + 6.818vw),
     7.5rem
   );
   --large-vertical-space: clamp(6.25rem, calc(2.841rem + 17.045vw), 15.625rem);
+
+  /* Hero heading fluid type scale */
+  --hero-heading-size-base: clamp(1.625rem, 8vw, 2.5rem);
+  --hero-heading-size-sm: clamp(1.625rem, 8vw, 3.125rem);
+  --hero-heading-size-md: clamp(3.125rem, 7vw, 4.4375rem);
+  --hero-heading-size-lg: clamp(3.75rem, 7vw, 4.4375rem);
+  --hero-inner-margin-top: clamp(2rem, calc(-1.341rem + 16.705vw), 11.188rem);
 
   /* Misc */
   --card-border-radius: 6px;
