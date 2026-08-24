@@ -61,4 +61,4 @@ Nearer term: continued interface improvements shaped by community feedback, and 
 
 ## Get involved
 
-Kotahi is open source and developed in the open — the code, the issue tracker and the roadmap are all public at [github.com/eLifePathways/Kotahi](https://github.com/eLifePathways/Kotahi). If you run a journal, a preprint review service or a research community and want to explore whether Kotahi fits, or you'd like to contribute, get in touch at [elifepathways.org/#get-involved](https://elifepathways.org/#get-involved)
+Kotahi is open source and developed in the open — the code is public at [github.com/eLifePathways/Kotahi](https://github.com/eLifePathways/Kotahi). If you run a journal, a preprint review service or a research community and want to explore whether Kotahi fits, or you'd like to contribute, get in touch at [elifepathways.org/#get-involved](https://elifepathways.org/#get-involved)
