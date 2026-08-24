@@ -2,7 +2,7 @@
 title: "Stewarding Kotahi: what we've shipped, and what we've learned"
 date: 2026-08-24
 imageAlt: "Kotahi logo"
-image: "./logo-kotahi.png"
+image: "./kotahi-logo.png"
 summary: "eLife Pathways has stewarded Kotahi since June 2026. Four releases on: COAR Notify support, faster imports at scale, and a new interface."
 ---
 
