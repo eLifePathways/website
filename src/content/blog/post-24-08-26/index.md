@@ -11,7 +11,7 @@ summary: "eLife Pathways has stewarded Kotahi since June 2026. Four releases on:
 
 ## What is Kotahi?
 
-Kotahi is an open-source platform for submission, peer review and publishing, serving journals, preprint servers, preprint review services and micropublications. It grew out of PubSweet at the Coko Foundation, was launched in 2021 under community governance, and has been stewarded by eLife Pathways since June 2026. Today, it supports the publication of reviews and assessments in eLife's Publish-Review-Curate (PRC) workflow, as well as research communities including MetaRoR, Lifecycle Journal and NASA's Astromaterials Data System (Astromat).
+Kotahi is an open-source platform for submission, peer review and publishing, serving journals, preprint servers, preprint review services and micropublications. It grew out of PubSweet at the Coko Foundation, was launched in 2021 under community governance, and has been stewarded by eLife Pathways since June 2026. Today, it supports the publication of reviews and assessments in eLife's Publish-Review-Curate (PRC) workflow, as well as research communities including MetaROR, Lifecycle Journal and NASA's Astromaterials Data System (Astromat).
 
 Kotahi is multi-tenant by design: a single installation can serve many independent journals, each with its own workflows, forms and branding. Its form builder lets a publisher shape a submission, review or decision process without writing code. It is genuinely open — MIT-licensed, community-governed, with no licence fees and no lock-in.
 
