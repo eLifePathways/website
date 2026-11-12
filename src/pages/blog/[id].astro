@@ -121,6 +121,39 @@ const jsonLd = {
     --flow-space: var(--space-lg);
   }
 
+  .markdown-content :global(h3) {
+    font-size: var(--font-size-lg);
+  }
+
+  .markdown-content :global(.image-row) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-md);
+    margin-block: var(--space-xl);
+  }
+  .markdown-content :global(.image-row figure) {
+    margin: 0;
+  }
+  .markdown-content :global(.image-row img) {
+    width: 100%;
+    height: auto;
+  }
+  .markdown-content :global(.image-row figcaption) {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    margin-block-start: var(--space-xs);
+    overflow-wrap: anywhere;
+  }
+  @media (max-width: 40rem) {
+    .markdown-content :global(.image-row) {
+      gap: var(--space-xs);
+    }
+    .markdown-content :global(.image-row figcaption) {
+      font-size: var(--font-size-xs);
+    }
+  }
+
   .summary {
     font-weight: var(--font-weight-semibold);
     color: var(--color-dark-purple);
