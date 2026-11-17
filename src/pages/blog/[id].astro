@@ -13,7 +13,27 @@ import { formatDate } from "../../components/formatDate";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
-  return posts.map((post) => ({ params: { id: post.id } }));
+  const ids = new Set(posts.map((post) => post.id));
+  const redirects = posts.flatMap((post) =>
+    post.data.redirectFrom.map((from) => {
+      if (ids.has(from)) {
+        throw new Error(
+          `redirectFrom "${from}" in post "${post.id}" collides with an existing post`,
+        );
+      }
+      ids.add(from);
+      return { params: { id: from }, props: { redirectTo: post.id } };
+    }),
+  );
+  return [
+    ...posts.map((post) => ({ params: { id: post.id }, props: {} })),
+    ...redirects,
+  ];
+}
+
+const { redirectTo } = Astro.props as { redirectTo?: string };
+if (redirectTo) {
+  return Astro.redirect(`/blog/${redirectTo}/`, 301);
 }
 
 const { id } = Astro.params;

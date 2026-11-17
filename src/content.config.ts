@@ -15,6 +15,11 @@ const blog = defineCollection({
       date: z.coerce.date(),
       image: image().optional(),
       imageAlt: z.string().optional(),
+      // Previous post id(s) (old folder names) that should redirect to this post.
+      redirectFrom: z
+        .union([z.string(), z.array(z.string())])
+        .optional()
+        .transform((v) => (v === undefined ? [] : [v].flat())),
     }),
 });
 
