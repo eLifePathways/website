@@ -1,4 +1,5 @@
 ---
+redirectFrom: post-04-06-26
 title: "eLife Pathways: Building a collaborative open science ecosystem"
 date: 2026-06-04
 imageAlt: "eLife Pathways logo"
