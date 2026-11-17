@@ -1,4 +1,5 @@
 ---
+redirectFrom: post-12-11-26
 title: "Modular Science at eLife Pathways"
 date: 2026-11-12
 imageAlt: "Four pillars of modular science"
@@ -156,6 +157,6 @@ We’ll continue working with the wider research community to build the open-sou
 3. **Scaling up extraction.** We’ll extend our claims-and-evidence extraction work with eLife collaborators, bringing in more expertise to validate the pipelines and keep a human in the loop.  
 4. **Working towards a modular platform.** We’re working to bring standards, reading experiences, and extraction pipelines together in an open-source platform. The aim is for journals, preprint servers, and research communities to share, review, and read research as modular components without building the infrastructure themselves.
 
-If you’d like hands-on help, we also offer development, customisation, integration, hosting and strategic support for moving to open, machine-readable publishing. **[Contact us](/blog/post-12-11-26/#get-involved).**
+If you’d like hands-on help, we also offer development, customisation, integration, hosting and strategic support for moving to open, machine-readable publishing. **[Contact us](/blog/2026-11-12-modular-science/#get-involved).**
 
 We'd also love to connect in person. You can catch up with us at upcoming events where we’ll be talking to different communities about modular science, including the [AI for Science Summit](https://ticmanchester.org/events/ai-for-science-summit/) on 26th November 2026 in Manchester, UK, the [Atmosphere Conference](https://atmosphereconf.org/), 29th April- 2nd May 2027 in Amsterdam, The Netherlands, and the [Convergence Conference](https://www.convergescience.org/) in Montreal, Canada on 16th-17th June 2027\. Come along and speak with us\!

@@ -1,4 +1,5 @@
 ---
+redirectFrom: post-24-08-26
 title: "Stewarding Kotahi: what we've shipped, and what we've learned"
 date: 2026-08-24
 imageAlt: "Kotahi logo"

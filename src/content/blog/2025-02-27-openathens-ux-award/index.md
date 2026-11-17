@@ -1,4 +1,5 @@
 ---
+redirectFrom: post-27-02-25
 title: "eLife winner of OpenAthens UX Award 2025"
 date: 2025-02-27
 imageAlt: "Winner UX Award 2025 OpenAthens Part of Jisc"

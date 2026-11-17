@@ -1,4 +1,5 @@
 ---
+redirectFrom: post-07-05-25
 title: "eLife among winners of Crossref Metadata Excellence Awards"
 date: "2025-05-07"
 image: ./crossref-award-16-10.png

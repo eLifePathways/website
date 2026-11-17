@@ -1,4 +1,5 @@
 ---
+redirectFrom: post-11-06-26
 title: "eLife Pathways is now stewarding Kotahi"
 date: 2026-06-11
 imageAlt: "Kotahi logo"

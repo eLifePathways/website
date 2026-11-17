@@ -6,7 +6,7 @@ const PAGES = [
   { path: "/solutions", name: "solutions" },
   { path: "/partnerships", name: "partnerships" },
   // { path: "/blog", name: "blog-listing" },
-  { path: "/blog/post-07-05-25/", name: "blog-page" },
+  { path: "/blog/2025-05-07-crossref-metadata-excellence-awards/", name: "blog-page" },
   { path: "/#mobile-nav", name: "mobile-nav", projects: ["mobile"] },
 ];
 

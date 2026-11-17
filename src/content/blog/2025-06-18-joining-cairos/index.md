@@ -1,4 +1,5 @@
 ---
+redirectFrom: post-18-06-25
 title: "eLife Pathways Joins CAIROS"
 date: 2026-06-18
 imageAlt: "Cosmik and Discourse Graphs logos"
